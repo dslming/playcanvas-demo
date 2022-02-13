@@ -7,7 +7,7 @@ import { CULLFACE_NONE } from '../../graphics/constants.js';
 import { drawQuadWithShader } from '../../graphics/simple-post-effect.js';
 import { DebugGraphics } from '../../graphics/debug-graphics.js';
 
-import { EMITTERSHAPE_BOX } from '../constants.js';
+import { EMITTERSHAPE_BOX } from '../../scene/constants.js';
 
 const spawnMatrix3 = new Mat3();
 const emitterMatrix3 = new Mat3();

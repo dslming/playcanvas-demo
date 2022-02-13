@@ -6,12 +6,12 @@ import {
 import { Shader } from '../../graphics/shader.js';
 import { shaderChunks } from '../../graphics/program-lib/chunks/chunks.js';
 
-import { BLEND_NORMAL } from '../constants.js';
-import { BasicMaterial } from '../materials/basic-material.js';
-import { GraphNode } from '../graph-node.js';
-import { Mesh } from '../mesh.js';
-import { MeshInstance } from '../mesh-instance.js';
-import { ImmediateBatches } from './immediate-batches.js';
+import { BLEND_NORMAL } from '../../scene/constants.js';
+import { BasicMaterial } from '../../scene/materials/basic-material.js';
+import { GraphNode } from '../../scene/graph-node.js';
+import { Mesh } from '../../scene/mesh.js';
+import { MeshInstance } from '../../scene/mesh-instance.js';
+import { ImmediateBatches } from '../immediate/immediate-batches.js';
 
 const tempPoints = [];
 

@@ -1,5 +1,5 @@
 import { ANIM_LAYER_OVERWRITE } from '../controller/constants.js';
-import { AnimEvaluator } from './anim-evaluator.js';
+import { AnimEvaluator } from '../evaluator/anim-evaluator.js';
 
 /**
  * Used to store and update the value of an animation target. This combines the values of multiple
