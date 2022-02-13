@@ -1,0 +1,5920 @@
+{
+  "name": "Main",
+  "created": "2018-10-30T16:35:46.417Z",
+  "settings": {
+    "physics": {
+      "gravity": [
+        0,
+        -9.8,
+        0
+      ]
+    },
+    "render": {
+      "fog_end": 1000,
+      "tonemapping": 2,
+      "skybox": 28353398,
+      "fog_density": 0.001,
+      "gamma_correction": 1,
+      "exposure": 3,
+      "fog_start": 1,
+      "global_ambient": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "skyboxIntensity": 1,
+      "fog_color": [
+        0.4117647058823529,
+        0.7098039215686275,
+        0.8352941176470589
+      ],
+      "lightmapMode": 1,
+      "fog": "none",
+      "lightmapMaxResolution": 2048,
+      "skyboxMip": 1,
+      "lightmapSizeMultiplier": 16
+    }
+  },
+  "entities": {
+    "da1e8935-dc61-11e8-97ae-026349a27a7c": {
+      "position": [
+        200,
+        44.36067868749113,
+        -2.3907068204636186
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "Light",
+      "parent": "da1e8933-dc61-11e8-97ae-026349a27a7c",
+      "resource_id": "da1e8935-dc61-11e8-97ae-026349a27a7c",
+      "components": {
+        "light": {
+          "vsmBlurSize": 11,
+          "normalOffsetBias": 0.05,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "outerConeAngle": 45,
+          "castShadows": true,
+          "intensity": 1,
+          "bakeDir": true,
+          "cookieAngle": 0,
+          "cookieChannel": "rgb",
+          "innerConeAngle": 40,
+          "bake": false,
+          "falloffMode": 0,
+          "cookieIntensity": 1,
+          "vsmBias": 0.01,
+          "vsmBlurMode": 1,
+          "type": "directional",
+          "cookieFalloff": true,
+          "isStatic": false,
+          "shadowUpdateMode": 1,
+          "cookieScale": [
+            1,
+            1
+          ],
+          "affectLightmapped": false,
+          "shadowBias": 0.2,
+          "affectDynamic": true,
+          "cookieAsset": null,
+          "cookieOffset": [
+            0,
+            0
+          ],
+          "shadowResolution": 2048,
+          "enabled": true,
+          "range": 8,
+          "shadowDistance": 100,
+          "shadowType": 0,
+          "layers": [
+            0
+          ]
+        }
+      },
+      "rotation": [
+        159.22806921716486,
+        83.48777739801511,
+        110.34934936743069
+      ],
+      "tags": [
+        "grid-exclude"
+      ],
+      "enabled": true,
+      "children": []
+    },
+    "da1e8933-dc61-11e8-97ae-026349a27a7c": {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "Root",
+      "parent": null,
+      "resource_id": "da1e8933-dc61-11e8-97ae-026349a27a7c",
+      "components": {},
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "tags": [],
+      "enabled": true,
+      "children": [
+        "8dd0df33-641d-497c-a838-b6c337799951",
+        "da1e8935-dc61-11e8-97ae-026349a27a7c",
+        "f6941185-6f45-4638-b4a9-7d55417f1f87",
+        "06475dad-e4e3-4849-8cfb-2cdff3704e0f",
+        "36191b03-0630-4d98-939b-02e261ccf5e8",
+        "3595358b-2b87-42f6-9de3-10f551190446"
+      ]
+    },
+    "f0873735-f6c7-43de-b24d-24158fcb98ec": {
+      "name": "Plane",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "f0873735-f6c7-43de-b24d-24158fcb98ec",
+      "parent": "732a0e76-8dbe-4e12-a963-88d1d9663183",
+      "children": [],
+      "position": [
+        0,
+        -0.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        50,
+        1,
+        50
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "box",
+          "asset": null,
+          "materialAsset": 28353457,
+          "castShadows": false,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    },
+    "732a0e76-8dbe-4e12-a963-88d1d9663183": {
+      "name": "Colliders",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "732a0e76-8dbe-4e12-a963-88d1d9663183",
+      "parent": "36191b03-0630-4d98-939b-02e261ccf5e8",
+      "children": [
+        "f0873735-f6c7-43de-b24d-24158fcb98ec",
+        "4559b1f5-daba-49a7-9274-5af40f72766f",
+        "d633aa00-d99b-446b-8b70-d6527c418470",
+        "d26d17e6-8bba-4a6f-bdc5-da577d1c5df4",
+        "32e54b9e-84f0-4b24-a0cc-18133a58697a",
+        "5a783674-59f0-4441-bd11-b7b4f8d884dd",
+        "e29f4e4f-6259-4486-93f9-a430c9311bc6",
+        "ecdab73e-82e1-4093-b3a3-62e82633f40b"
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {}
+    },
+    "d633aa00-d99b-446b-8b70-d6527c418470": {
+      "name": "Cone",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "d633aa00-d99b-446b-8b70-d6527c418470",
+      "parent": "732a0e76-8dbe-4e12-a963-88d1d9663183",
+      "children": [
+        "fdaadd1f-68a9-4b62-98a6-c62c6f5eb992"
+      ],
+      "position": [
+        2.076168808247235,
+        1,
+        -3.2884679709557068
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "cylinder",
+          "asset": null,
+          "materialAsset": 28353512,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    },
+    "d26d17e6-8bba-4a6f-bdc5-da577d1c5df4": {
+      "name": "Sphere",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "d26d17e6-8bba-4a6f-bdc5-da577d1c5df4",
+      "parent": "732a0e76-8dbe-4e12-a963-88d1d9663183",
+      "children": [],
+      "position": [
+        -2.094,
+        0.5,
+        9.173
+      ],
+      "rotation": [
+        0,
+        359.9,
+        0
+      ],
+      "scale": [
+        3,
+        3,
+        3
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "sphere",
+          "asset": null,
+          "materialAsset": 28353512,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    },
+    "32e54b9e-84f0-4b24-a0cc-18133a58697a": {
+      "name": "Sphere",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "32e54b9e-84f0-4b24-a0cc-18133a58697a",
+      "parent": "732a0e76-8dbe-4e12-a963-88d1d9663183",
+      "children": [],
+      "position": [
+        -2.149,
+        0.5,
+        -2.384
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "sphere",
+          "asset": null,
+          "materialAsset": 28353512,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    },
+    "8dd0df33-641d-497c-a838-b6c337799951": {
+      "name": "Camera",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "8dd0df33-641d-497c-a838-b6c337799951",
+      "parent": "da1e8933-dc61-11e8-97ae-026349a27a7c",
+      "children": [],
+      "position": [
+        491.4682312011719,
+        5.060145854949951,
+        504.1766662597656
+      ],
+      "rotation": [
+        -2.1999967876393285,
+        -3.200260771234647,
+        1.1406906762183028e-9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "camera": {
+          "enabled": true,
+          "clearColorBuffer": true,
+          "clearColor": [
+            0.118,
+            0.118,
+            0.118,
+            1
+          ],
+          "clearDepthBuffer": true,
+          "projection": 0,
+          "fov": 45,
+          "frustumCulling": true,
+          "orthoHeight": 4,
+          "nearClip": 0.1,
+          "farClip": 1000,
+          "priority": 0,
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "layers": [
+            0,
+            2,
+            3,
+            4,
+            1
+          ]
+        },
+        "script": {
+          "enabled": true,
+          "order": [
+            "orbitCamera",
+            "mouseInput",
+            "keyboardInput",
+            "touchInput"
+          ],
+          "scripts": {
+            "mouseInput": {
+              "enabled": true,
+              "attributes": {
+                "orbitSensitivity": 0.3,
+                "distanceSensitivity": 0.35
+              }
+            },
+            "keyboardInput": {
+              "enabled": true,
+              "attributes": {}
+            },
+            "touchInput": {
+              "enabled": true,
+              "attributes": {
+                "orbitSensitivity": 0.4,
+                "distanceSensitivity": 0.5
+              }
+            },
+            "orbitCamera": {
+              "enabled": true,
+              "attributes": {
+                "distanceMax": 75,
+                "distanceMin": 2,
+                "pitchAngleMax": 90,
+                "pitchAngleMin": -10,
+                "inertiaFactor": 0.07,
+                "focusEntity": "af1b86eb-040b-4c15-869f-95e6722c293a",
+                "frameOnStart": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "e29f4e4f-6259-4486-93f9-a430c9311bc6": {
+      "name": "Wall",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "e29f4e4f-6259-4486-93f9-a430c9311bc6",
+      "parent": "732a0e76-8dbe-4e12-a963-88d1d9663183",
+      "children": [],
+      "position": [
+        -15,
+        2.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.5,
+        5,
+        30
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "box",
+          "asset": null,
+          "materialAsset": 28353515,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    },
+    "ecdab73e-82e1-4093-b3a3-62e82633f40b": {
+      "name": "Wall",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "ecdab73e-82e1-4093-b3a3-62e82633f40b",
+      "parent": "732a0e76-8dbe-4e12-a963-88d1d9663183",
+      "children": [],
+      "position": [
+        0,
+        2.5,
+        -15
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scale": [
+        0.5,
+        5,
+        30
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "box",
+          "asset": null,
+          "materialAsset": 28353515,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    },
+    "b88595c1-9536-49ea-aee5-92ef0714ded1": {
+      "name": "Dropped Rocks",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "parent": "36191b03-0630-4d98-939b-02e261ccf5e8",
+      "children": [
+        "c88a24d1-483a-47df-b436-5364538b4a78",
+        "8d6c1628-b9a5-4f4d-96e8-1a2a64026f14",
+        "fe72c810-8cfb-4e97-ac0c-ad6b31d8a4e6",
+        "19c20b77-b3c7-4f59-a5c0-5ac8e856700c",
+        "fc30ea03-7906-489c-9c66-a9407f3aae3c",
+        "e1c59f5b-92fd-4d26-af79-057192574761",
+        "7ce704a9-b538-429d-9b5d-06054db30c14",
+        "d4317886-35b1-4c92-971a-118336220496",
+        "02d236d1-c161-45d8-89c9-84a97b98173a",
+        "4b2d6867-4170-4f30-896c-a1b3d5100bfb",
+        "36c29cdf-6f4e-4392-9037-54b302df3c03",
+        "52d1438f-97de-4f03-853e-5cf48df5698e",
+        "6b6b731d-c32f-4b30-9d28-bcffb3b9304e",
+        "45dbb856-1455-4fb0-aa55-fa291b5323cf",
+        "c7a26136-3c4a-4927-a1de-6f9950df2da6",
+        "ad8c72cf-2979-4b5a-9fe1-f7c83bacc4d1",
+        "3530229e-9d4d-4c9d-9687-ede31419be55",
+        "b7ea7d6f-6c49-48e0-900b-dc2866a6549b",
+        "a2cc9192-c16d-468e-9302-2bb89489d991",
+        "0ed9cf06-7385-4aa3-8c2b-97ee9a0ef88d",
+        "c8b53528-ce21-4ddb-b972-cd1332c227d9",
+        "99fa682c-af9c-4af5-b4ba-127952304612",
+        "6ca6f847-4115-40ea-8dd5-c6b55972bf42",
+        "9a2a6864-6bf9-4df8-b558-df594f3eafa4",
+        "7a2e7cce-db15-4179-a2e4-55fc6bd248bf",
+        "a62930d4-6d31-4103-b607-5e2fe0b55b10",
+        "bad948ff-776c-47db-93af-1f2f0ecdea59",
+        "2772dd77-0ed8-48f1-aa80-a06512956c60",
+        "3d32f10d-8062-4f71-80bc-bd6574b602e6",
+        "75ac0fbe-2219-40ed-b2fb-1d80ddd33d24",
+        "d643e361-4731-4fed-9f7c-a4acaf25439f",
+        "b9459f38-9bb5-4162-a64d-837fe7159f57",
+        "a5a570fd-c39d-411b-b8e9-b9c77b6728cb",
+        "eb72cee3-6e30-438f-958e-33e0b025a0ea",
+        "faebff85-2407-42af-9f49-d1af590734e7",
+        "957f7c12-8ad3-4882-8c91-12d0078cf328",
+        "eeddf24e-1bdd-46b2-9d0c-063fb6d6690f",
+        "b10c03c0-1f97-4b55-9e47-e4aed1bc5c35",
+        "41d1ab5e-9038-45ab-b811-1a0d7162a239",
+        "65bcfdb9-3cb7-4360-9feb-df7e4e4f1b55",
+        "f98a011f-31b2-43bb-a405-0d0966d2ed88",
+        "6bb388f4-8920-48e9-bbfe-d639b1258107",
+        "8dcc4cdd-ed86-4113-84ba-19527d93a34f",
+        "682414b5-7e1f-47ca-b4ab-98f887c0613a",
+        "416a9abd-3c17-4ef6-af3a-660c6de69d98",
+        "15f5189c-0b95-4217-a672-12c1819e72d9",
+        "8e4718b6-7559-4b1b-a797-7243f310e771",
+        "3fe25be8-dd1f-47a1-a1b5-15c2acf56a42",
+        "61b1dcf8-b238-4ed0-bb84-3a9806ca4635",
+        "fd83e83d-c975-43b3-bb42-0ba88b3014e5",
+        "577464d6-1c1b-45b5-90ce-40108d454786",
+        "1b140ffb-382e-476f-8b82-93a3c13edd38",
+        "6a5fa896-e14f-4cb6-bab4-1dea30dd5f65",
+        "0ebc4d3f-7316-4af7-9945-0d08ef5410d1",
+        "09f0e118-73b0-4399-82c3-a375811c6098",
+        "97ee40a2-d54a-4afa-ad7c-29dce7a02ed0",
+        "73e9912c-436e-404f-99a4-d40afca5bcd6",
+        "1b2eeaf9-aefd-48ed-ad9f-872058d91af0",
+        "1dd22588-5259-4f71-bf33-9e1763154691",
+        "56efefc6-840d-4583-bf3f-4041d170644d",
+        "7a802765-2534-42aa-b705-3e1975e93493"
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {}
+    },
+    "c88a24d1-483a-47df-b436-5364538b4a78": {
+      "name": "Rock_Flat_m_2C_08",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "c88a24d1-483a-47df-b436-5364538b4a78",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -3.244497776031494,
+        -0.00007372375694103539,
+        -9.699077606201172
+      ],
+      "rotation": [
+        -179.99238218838224,
+        -7.999209862402758,
+        -179.99380774450444
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353490,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "8d6c1628-b9a5-4f4d-96e8-1a2a64026f14": {
+      "name": "Rock_Flat_m_2C_08",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "8d6c1628-b9a5-4f4d-96e8-1a2a64026f14",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -10.154940605163574,
+        -0.000009169123586616479,
+        -6.56913948059082
+      ],
+      "rotation": [
+        0.0012866745629680422,
+        10.665603874679357,
+        -0.0005192557895641984
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353490,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "fe72c810-8cfb-4e97-ac0c-ad6b31d8a4e6": {
+      "name": "Rock_Flat_m_2C_02",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "fe72c810-8cfb-4e97-ac0c-ad6b31d8a4e6",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -12.160319328308105,
+        -2.575779660674016e-7,
+        -4.966851234436035
+      ],
+      "rotation": [
+        -179.9998663773134,
+        12.15959574046619,
+        -179.99993666744015
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353485,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "19c20b77-b3c7-4f59-a5c0-5ac8e856700c": {
+      "name": "Rock_Flat_m_2C_06",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "19c20b77-b3c7-4f59-a5c0-5ac8e856700c",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -11.185574531555176,
+        0.00023571877682115883,
+        -1.576186180114746
+      ],
+      "rotation": [
+        0.000009932242000468104,
+        43.07512013232064,
+        0.000001024061601465141
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353489,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "fc30ea03-7906-489c-9c66-a9407f3aae3c": {
+      "name": "Rock_Flat_m_2C_04",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "fc30ea03-7906-489c-9c66-a9407f3aae3c",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -13.997563362121582,
+        -0.00019925784727092832,
+        1.6361231803894043
+      ],
+      "rotation": [
+        0.054386132438883676,
+        -22.137217866626656,
+        -0.0490028678375987
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353477,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "e1c59f5b-92fd-4d26-af79-057192574761": {
+      "name": "Rock_Flat_m_2C_07",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "e1c59f5b-92fd-4d26-af79-057192574761",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -7.961358547210693,
+        0.0003383331932127476,
+        3.45147442817688
+      ],
+      "rotation": [
+        179.98697287199138,
+        68.42422203524615,
+        179.98238386050429
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353461,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "7ce704a9-b538-429d-9b5d-06054db30c14": {
+      "name": "Rock_Flat_m_2C_10",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "7ce704a9-b538-429d-9b5d-06054db30c14",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -2.123704671859741,
+        -6.749022531948867e-7,
+        6.938316822052002
+      ],
+      "rotation": [
+        0.00009412132896087365,
+        -37.51633833691563,
+        -0.00001845494989966397
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353491,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "d4317886-35b1-4c92-971a-118336220496": {
+      "name": "Rock_Flat_m_2C_07",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "d4317886-35b1-4c92-971a-118336220496",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        0.988234974629564,
+        0.00041683544986881316,
+        10.1386716405692
+      ],
+      "rotation": [
+        179.98300918355335,
+        29.11686704420398,
+        179.97371040566168
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353461,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "02d236d1-c161-45d8-89c9-84a97b98173a": {
+      "name": "Rock_Flat_m_2C_01",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "02d236d1-c161-45d8-89c9-84a97b98173a",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        3.2599353790283203,
+        0.002490794751793146,
+        8.800919532775879
+      ],
+      "rotation": [
+        -0.00016513118713703956,
+        85.2629087163944,
+        -0.0002655916747712241
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353475,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "4b2d6867-4170-4f30-896c-a1b3d5100bfb": {
+      "name": "Rock_Flat_m_2C_03",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "4b2d6867-4170-4f30-896c-a1b3d5100bfb",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        7.173670768737793,
+        -0.00006640771607635543,
+        7.567519187927246
+      ],
+      "rotation": [
+        -179.97406960964594,
+        -41.73482028967286,
+        179.98552847959857
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353478,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "36c29cdf-6f4e-4392-9037-54b302df3c03": {
+      "name": "Rock_Flat_m_2C_07",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "36c29cdf-6f4e-4392-9037-54b302df3c03",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        1.727895736694336,
+        0.3304120600223541,
+        2.434596300125122
+      ],
+      "rotation": [
+        0.011378456884241989,
+        0.3808639825613079,
+        -178.31356410766614
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353461,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "52d1438f-97de-4f03-853e-5cf48df5698e": {
+      "name": "Rock_Flat_m_2C_08",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "52d1438f-97de-4f03-853e-5cf48df5698e",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        4.367308139801025,
+        -1.2331776133578387e-7,
+        -0.918221652507782
+      ],
+      "rotation": [
+        179.9999674877507,
+        -12.065901964385187,
+        -179.99996203580227
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353490,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "6b6b731d-c32f-4b30-9d28-bcffb3b9304e": {
+      "name": "Rock_Flat_m_2C_01",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "6b6b731d-c32f-4b30-9d28-bcffb3b9304e",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -4.190205097198486,
+        0.3289157748222351,
+        -5.498965263366699
+      ],
+      "rotation": [
+        34.940673421742204,
+        -83.67602115067898,
+        157.74695151767526
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353475,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "45dbb856-1455-4fb0-aa55-fa291b5323cf": {
+      "name": "Rock_Flat_m_2C_04",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "45dbb856-1455-4fb0-aa55-fa291b5323cf",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -1.2570539712905884,
+        -0.00039904992445372045,
+        -0.6143167614936829
+      ],
+      "rotation": [
+        0.11287309379158962,
+        -30.700688176318256,
+        -0.08470563390888718
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353477,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "c7a26136-3c4a-4927-a1de-6f9950df2da6": {
+      "name": "Rock_Flat_m_2C_03",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "c7a26136-3c4a-4927-a1de-6f9950df2da6",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -7.189419746398926,
+        -0.00003578164614737034,
+        -3.0674045085906982
+      ],
+      "rotation": [
+        -179.99708377113637,
+        46.040917194312065,
+        179.99344572440367
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353478,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "ad8c72cf-2979-4b5a-9fe1-f7c83bacc4d1": {
+      "name": "Rock_Flat_m_2C_07",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "ad8c72cf-2979-4b5a-9fe1-f7c83bacc4d1",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -9.30086898803711,
+        0.0002699420147109777,
+        -1.351119041442871
+      ],
+      "rotation": [
+        179.96866121732788,
+        6.699558834195782,
+        -179.96142404949822
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353461,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "3530229e-9d4d-4c9d-9687-ede31419be55": {
+      "name": "Rock_Flat_m_2C_09",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "3530229e-9d4d-4c9d-9687-ede31419be55",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -5.215020656585693,
+        -0.00003566189843695611,
+        3.1701245307922363
+      ],
+      "rotation": [
+        -179.9943775039977,
+        31.786371209777474,
+        -179.99528463925682
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353476,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "b7ea7d6f-6c49-48e0-900b-dc2866a6549b": {
+      "name": "Rock_Flat_m_2C_03",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "b7ea7d6f-6c49-48e0-900b-dc2866a6549b",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        2.2573840618133545,
+        -0.00011535008525243029,
+        4.1642584800720215
+      ],
+      "rotation": [
+        -0.07771920708675302,
+        69.26045375591454,
+        -0.10120140623884637
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353478,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "a2cc9192-c16d-468e-9302-2bb89489d991": {
+      "name": "Rock_Flat_m_2C_09",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "a2cc9192-c16d-468e-9302-2bb89489d991",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        5.989877223968506,
+        -2.0905032727114303e-7,
+        3.68125319480896
+      ],
+      "rotation": [
+        -179.9999855789325,
+        -4.66696542963812,
+        -179.99997996447075
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353476,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "0ed9cf06-7385-4aa3-8c2b-97ee9a0ef88d": {
+      "name": "Rock_Flat_m_2C_10",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "0ed9cf06-7385-4aa3-8c2b-97ee9a0ef88d",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        8.485764503479004,
+        -0.000007775584890623577,
+        3.7898366451263428
+      ],
+      "rotation": [
+        179.9999327658726,
+        13.256125652407974,
+        -179.99928238594904
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353491,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "c8b53528-ce21-4ddb-b972-cd1332c227d9": {
+      "name": "Rock_Flat_m_2C_05",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "c8b53528-ce21-4ddb-b972-cd1332c227d9",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        6.857064247131348,
+        0.2534789443016052,
+        1.3114279508590698
+      ],
+      "rotation": [
+        -179.74367235534544,
+        6.8889348427380535,
+        2.1704665101063627
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353488,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "99fa682c-af9c-4af5-b4ba-127952304612": {
+      "name": "Rock_Flat_m_2C_06",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "99fa682c-af9c-4af5-b4ba-127952304612",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        4.75947904586792,
+        -0.0013735601678490639,
+        -0.3358442783355713
+      ],
+      "rotation": [
+        179.95016709504847,
+        -34.47562450215668,
+        -179.80745578371443
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353489,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "6ca6f847-4115-40ea-8dd5-c6b55972bf42": {
+      "name": "Rock_Flat_m_2C_01",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "6ca6f847-4115-40ea-8dd5-c6b55972bf42",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -8.56429386138916,
+        0.002322928514331579,
+        -9.684061050415039
+      ],
+      "rotation": [
+        -0.12640885904943458,
+        77.80768841145272,
+        -0.14050538150318742
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353475,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "9a2a6864-6bf9-4df8-b558-df594f3eafa4": {
+      "name": "Rock_Flat_m_2C_10",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "9a2a6864-6bf9-4df8-b558-df594f3eafa4",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -12.280447006225586,
+        -0.0000011497630794110592,
+        -10.92417049407959
+      ],
+      "rotation": [
+        179.9999406638779,
+        -49.078020514560706,
+        -179.9998879619898
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353491,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "7a2e7cce-db15-4179-a2e4-55fc6bd248bf": {
+      "name": "Rock_Flat_m_2C_06",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "7a2e7cce-db15-4179-a2e4-55fc6bd248bf",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -11.821252822875977,
+        0.0002357554476475343,
+        -8.322633743286133
+      ],
+      "rotation": [
+        -179.99999673525605,
+        -22.24684788457582,
+        179.9999996965643
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353489,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "a62930d4-6d31-4103-b607-5e2fe0b55b10": {
+      "name": "Rock_Flat_m_2C_11",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "a62930d4-6d31-4103-b607-5e2fe0b55b10",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -10.051278114318848,
+        0.38399699330329895,
+        -2.4192299842834473
+      ],
+      "rotation": [
+        -179.99968921603875,
+        -49.952067408723835,
+        -0.0008911982482839889
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353483,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "bad948ff-776c-47db-93af-1f2f0ecdea59": {
+      "name": "Rock_Flat_m_2C_08",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "bad948ff-776c-47db-93af-1f2f0ecdea59",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -9.265254020690918,
+        -3.764304423725662e-8,
+        2.777127981185913
+      ],
+      "rotation": [
+        0.000020548174750892678,
+        -80.30339821287725,
+        -0.000020110021322901034
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353490,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "2772dd77-0ed8-48f1-aa80-a06512956c60": {
+      "name": "Rock_Flat_m_2C_10",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "2772dd77-0ed8-48f1-aa80-a06512956c60",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -7.99331521987915,
+        -1.5267895037140988e-7,
+        4.542367935180664
+      ],
+      "rotation": [
+        -179.99997411437553,
+        64.612525080559,
+        -179.99999438506674
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353491,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "3d32f10d-8062-4f71-80bc-bd6574b602e6": {
+      "name": "Rock_Flat_m_2C_01",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "3d32f10d-8062-4f71-80bc-bd6574b602e6",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -3.2594785690307617,
+        0.0024907246697694063,
+        6.393747806549072
+      ],
+      "rotation": [
+        -0.0040886770521352195,
+        89.38550115412747,
+        -0.004197579542289079
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353475,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "75ac0fbe-2219-40ed-b2fb-1d80ddd33d24": {
+      "name": "Rock_Flat_m_2C_08",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "75ac0fbe-2219-40ed-b2fb-1d80ddd33d24",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        1.6952764987945557,
+        -8.807800355725703e-8,
+        7.372067928314209
+      ],
+      "rotation": [
+        -179.99999871660174,
+        -35.904948638591364,
+        -179.99998543570337
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353490,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "d643e361-4731-4fed-9f7c-a4acaf25439f": {
+      "name": "Rock_Flat_m_2C_09",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "d643e361-4731-4fed-9f7c-a4acaf25439f",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        3.0811944007873535,
+        0.2999989688396454,
+        6.200047492980957
+      ],
+      "rotation": [
+        -0.0002472826742882807,
+        -52.1001485528101,
+        -179.99993944241444
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353476,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "b9459f38-9bb5-4162-a64d-837fe7159f57": {
+      "name": "Rock_Flat_m_2C_06",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "b9459f38-9bb5-4162-a64d-837fe7159f57",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -3.843905448913574,
+        0.2693559527397156,
+        -1.1866992712020874
+      ],
+      "rotation": [
+        8.436868181174415,
+        -78.92664780042622,
+        171.40509427529952
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353489,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "a5a570fd-c39d-411b-b8e9-b9c77b6728cb": {
+      "name": "Rock_Flat_m_2C_11",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "a5a570fd-c39d-411b-b8e9-b9c77b6728cb",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        0.9517826437950134,
+        -0.0000026680522751121316,
+        2.4303038120269775
+      ],
+      "rotation": [
+        -0.007936127218429987,
+        35.56323946416545,
+        -0.013809533436781403
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353483,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "eb72cee3-6e30-438f-958e-33e0b025a0ea": {
+      "name": "Rock_Flat_m_2C_01",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "eb72cee3-6e30-438f-958e-33e0b025a0ea",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -5.007266998291016,
+        0.002492013853043318,
+        3.256483554840088
+      ],
+      "rotation": [
+        -0.0002863070823312909,
+        21.547280024147323,
+        -0.0003381441511364043
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353475,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "faebff85-2407-42af-9f49-d1af590734e7": {
+      "name": "Rock_Flat_m_2C_09",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "faebff85-2407-42af-9f49-d1af590734e7",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        3.1726522419019147,
+        0.29999640583992004,
+        2.8648294564975663
+      ],
+      "rotation": [
+        -0.000688193803931917,
+        -7.267129428442836,
+        -179.99924289349744
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353476,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "957f7c12-8ad3-4882-8c91-12d0078cf328": {
+      "name": "Rock_Flat_m_2C_11",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "957f7c12-8ad3-4882-8c91-12d0078cf328",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -6.438652038574219,
+        1.898826235136042e-10,
+        -8.948753356933594
+      ],
+      "rotation": [
+        179.9999965527853,
+        -84.65211202029316,
+        -179.9999957430503
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353483,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "eeddf24e-1bdd-46b2-9d0c-063fb6d6690f": {
+      "name": "Rock_Flat_m_2C_10",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "eeddf24e-1bdd-46b2-9d0c-063fb6d6690f",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -5.981274604797363,
+        0.19454480707645416,
+        -2.320474147796631
+      ],
+      "rotation": [
+        -0.010522301344762595,
+        -61.18227731959004,
+        -179.99544155432017
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353491,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "b10c03c0-1f97-4b55-9e47-e4aed1bc5c35": {
+      "name": "Rock_Flat_m_2C_10",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "b10c03c0-1f97-4b55-9e47-e4aed1bc5c35",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -6.0210652351379395,
+        0.1944928616285324,
+        -1.9236637353897095
+      ],
+      "rotation": [
+        -0.005509648431269144,
+        26.243522432996464,
+        -179.99046839649196
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353491,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "41d1ab5e-9038-45ab-b811-1a0d7162a239": {
+      "name": "Rock_Flat_m_2C_06",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "41d1ab5e-9038-45ab-b811-1a0d7162a239",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        7.048075199127197,
+        0.26935848593711853,
+        9.456693649291992
+      ],
+      "rotation": [
+        -179.4288260927487,
+        19.134598624392286,
+        1.7417397979046811
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353489,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "65bcfdb9-3cb7-4360-9feb-df7e4e4f1b55": {
+      "name": "Rock_Flat_m_2C_08",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "65bcfdb9-3cb7-4360-9feb-df7e4e4f1b55",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        8.222075462341309,
+        0.2654324173927307,
+        2.6860105991363525
+      ],
+      "rotation": [
+        1.067843785824695,
+        -3.650920564946071,
+        -179.96696078530792
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353490,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "f98a011f-31b2-43bb-a405-0d0966d2ed88": {
+      "name": "Rock_Flat_m_2C_07",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "f98a011f-31b2-43bb-a405-0d0966d2ed88",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        1.4615567922592163,
+        0.00047799161984585226,
+        0.8765259385108948
+      ],
+      "rotation": [
+        0.0012128707605263355,
+        1.782762641997931,
+        0.04035677813071088
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353461,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "6bb388f4-8920-48e9-bbfe-d639b1258107": {
+      "name": "Rock_Flat_m_2C_06",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "6bb388f4-8920-48e9-bbfe-d639b1258107",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -3.873575448989868,
+        0.00021822951384820044,
+        1.8359706401824951
+      ],
+      "rotation": [
+        0.012568791512333383,
+        -80.25830858999055,
+        -0.01233663094678303
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353489,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "8dcc4cdd-ed86-4113-84ba-19527d93a34f": {
+      "name": "Rock_Flat_m_2C_09",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "8dcc4cdd-ed86-4113-84ba-19527d93a34f",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        0.24345722794532776,
+        -0.000003920187737094238,
+        5.9904608726501465
+      ],
+      "rotation": [
+        0.0004863113931430536,
+        -8.589989113445444,
+        -0.0005025511621343068
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353476,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "682414b5-7e1f-47ca-b4ab-98f887c0613a": {
+      "name": "Rock_Flat_m_2C_05",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "682414b5-7e1f-47ca-b4ab-98f887c0613a",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -1.1562621593475342,
+        -0.000045092241634847596,
+        0.9656368494033813
+      ],
+      "rotation": [
+        -179.9184281770394,
+        -20.960701661404233,
+        179.94078531133192
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353488,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "416a9abd-3c17-4ef6-af3a-660c6de69d98": {
+      "name": "Rock_Flat_m_2C_08",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "416a9abd-3c17-4ef6-af3a-660c6de69d98",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        6.104022979736328,
+        0.26543107628822327,
+        0.29902252554893494
+      ],
+      "rotation": [
+        -178.9382708019793,
+        13.923934994644036,
+        -0.03413506197986744
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353490,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "15f5189c-0b95-4217-a672-12c1819e72d9": {
+      "name": "Rock_Flat_m_2C_09",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "15f5189c-0b95-4217-a672-12c1819e72d9",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        2.584763288497925,
+        0.2999989688396454,
+        -6.895711898803711
+      ],
+      "rotation": [
+        -179.99191367946784,
+        -89.11327728206535,
+        -0.008337400219149561
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353476,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "8e4718b6-7559-4b1b-a797-7243f310e771": {
+      "name": "Rock_Flat_m_2C_10",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "8e4718b6-7559-4b1b-a797-7243f310e771",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        5.899551868438721,
+        -0.00018471009389031678,
+        0.484516441822052
+      ],
+      "rotation": [
+        -0.06573473043634721,
+        63.309583464987426,
+        -0.049472053409568915
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353491,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "3fe25be8-dd1f-47a1-a1b5-15c2acf56a42": {
+      "name": "Rock_Flat_m_2C_02",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "3fe25be8-dd1f-47a1-a1b5-15c2acf56a42",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        4.988006591796875,
+        7.254804472722753e-7,
+        2.6439220905303955
+      ],
+      "rotation": [
+        0.000002083996956335099,
+        -45.1406372564372,
+        -0.0000025373660881752
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353485,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "61b1dcf8-b238-4ed0-bb84-3a9806ca4635": {
+      "name": "Rock_Flat_m_2C_11",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "61b1dcf8-b238-4ed0-bb84-3a9806ca4635",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        4.7212815284729,
+        -0.000004015126251033507,
+        -1.208103895187378
+      ],
+      "rotation": [
+        -179.9857949089794,
+        0.5967212455033848,
+        179.99923143507633
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353483,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "fd83e83d-c975-43b3-bb42-0ba88b3014e5": {
+      "name": "Rock_Flat_m_2C_04",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "fd83e83d-c975-43b3-bb42-0ba88b3014e5",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -0.5198465318805319,
+        -0.000547589675989002,
+        -2.006991917376588
+      ],
+      "rotation": [
+        -179.6063173497923,
+        -72.15751531174854,
+        179.67107271784212
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353477,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "1b140ffb-382e-476f-8b82-93a3c13edd38": {
+      "name": "Rock_Flat_m_2C_10",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "1b140ffb-382e-476f-8b82-93a3c13edd38",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        0.4883350431919098,
+        0.1945948451757431,
+        7.207675933837891
+      ],
+      "rotation": [
+        179.99999541005138,
+        -51.23128387367238,
+        -0.000009363936160536622
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353491,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "6a5fa896-e14f-4cb6-bab4-1dea30dd5f65": {
+      "name": "Rock_Flat_m_2C_08",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "6a5fa896-e14f-4cb6-bab4-1dea30dd5f65",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        1.195886492729187,
+        -0.00020644968026317656,
+        3.281895399093628
+      ],
+      "rotation": [
+        -179.97222668442623,
+        15.761173229453197,
+        -179.96734104634078
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353490,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "0ebc4d3f-7316-4af7-9945-0d08ef5410d1": {
+      "name": "Rock_Flat_m_2C_05",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "0ebc4d3f-7316-4af7-9945-0d08ef5410d1",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -2.1742215156555176,
+        0.00012597271415870637,
+        -1.0231003761291504
+      ],
+      "rotation": [
+        179.99999967193068,
+        43.8787838949713,
+        179.9999976897841
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353488,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "09f0e118-73b0-4399-82c3-a375811c6098": {
+      "name": "Rock_Flat_m_2C_04",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "09f0e118-73b0-4399-82c3-a375811c6098",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -1.8554397821426392,
+        -0.000053499559726333246,
+        7.393934726715088
+      ],
+      "rotation": [
+        0.0021945666917864495,
+        22.862243728407204,
+        -0.0018585357974121237
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353477,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "97ee40a2-d54a-4afa-ad7c-29dce7a02ed0": {
+      "name": "Rock_Flat_m_2C_03",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "97ee40a2-d54a-4afa-ad7c-29dce7a02ed0",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        1.1900545623989291,
+        0.3254287242889422,
+        -0.5257955173930782
+      ],
+      "rotation": [
+        -172.401207875452,
+        -74.18111322439734,
+        -13.50719484738343
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353478,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "73e9912c-436e-404f-99a4-d40afca5bcd6": {
+      "name": "Rock_Flat_m_2C_09",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "73e9912c-436e-404f-99a4-d40afca5bcd6",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        1.5606578588485718,
+        -0.0000036699998418043833,
+        -4.623201370239258
+      ],
+      "rotation": [
+        0.00035921518943578246,
+        21.10069783849249,
+        -0.0002412683869262769
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353476,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "1b2eeaf9-aefd-48ed-ad9f-872058d91af0": {
+      "name": "Rock_Flat_m_2C_02",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "1b2eeaf9-aefd-48ed-ad9f-872058d91af0",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -3.6396231651306152,
+        0.3368319571018219,
+        -3.701857805252075
+      ],
+      "rotation": [
+        -5.85845634263861,
+        -9.35896036237518,
+        -176.31637972317583
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353485,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "1dd22588-5259-4f71-bf33-9e1763154691": {
+      "name": "Rock_Flat_m_2C_04",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "1dd22588-5259-4f71-bf33-9e1763154691",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -5.442066669464111,
+        -0.00003569752516341396,
+        3.394137144088745
+      ],
+      "rotation": [
+        0.00033097999346056047,
+        9.974821300604637,
+        -0.0004175652457270454
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353477,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "56efefc6-840d-4583-bf3f-4041d170644d": {
+      "name": "Rock_Flat_m_2C_06",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "56efefc6-840d-4583-bf3f-4041d170644d",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -2.219886541366577,
+        0.00020647209021262825,
+        7.275302410125732
+      ],
+      "rotation": [
+        0.005730810774960578,
+        13.725505460688758,
+        0.0013312165757375387
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353489,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "7a802765-2534-42aa-b705-3e1975e93493": {
+      "name": "Rock_Flat_m_2C_05",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "7a802765-2534-42aa-b705-3e1975e93493",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        -4.736023426055908,
+        0.00011516199447214603,
+        1.7428505420684814
+      ],
+      "rotation": [
+        -179.9599776721255,
+        -84.29218350352924,
+        179.9636953427407
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353488,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "6c519586-7862-4bd2-b4b3-e09cbb8ffd7e": {
+      "name": "Spawned Trees",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "6c519586-7862-4bd2-b4b3-e09cbb8ffd7e",
+      "parent": "36191b03-0630-4d98-939b-02e261ccf5e8",
+      "children": [
+        "9a574c5a-8301-42e7-9e8a-b318464bbdb9",
+        "6db69294-136e-44ed-8376-79f0ea7d7710",
+        "f3d31a52-4689-45e6-a4d9-e984687b8657"
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {}
+    },
+    "9a574c5a-8301-42e7-9e8a-b318464bbdb9": {
+      "name": "Oak_Tree_crk_l_02_LOD",
+      "tags": [
+        "tree-oak"
+      ],
+      "enabled": true,
+      "resource_id": "9a574c5a-8301-42e7-9e8a-b318464bbdb9",
+      "parent": "6c519586-7862-4bd2-b4b3-e09cbb8ffd7e",
+      "children": [],
+      "position": [
+        8.3235502243042,
+        0.31843928101984265,
+        -9.627022743225098
+      ],
+      "rotation": [
+        180,
+        22.6346798653485,
+        180
+      ],
+      "scale": [
+        0.512664455073533,
+        0.512664455073533,
+        0.512664455073533
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353528,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    },
+    "6db69294-136e-44ed-8376-79f0ea7d7710": {
+      "name": "Oak_Tree_l_01_LOD",
+      "tags": [
+        "tree-oak"
+      ],
+      "enabled": true,
+      "resource_id": "6db69294-136e-44ed-8376-79f0ea7d7710",
+      "parent": "6c519586-7862-4bd2-b4b3-e09cbb8ffd7e",
+      "children": [],
+      "position": [
+        -9.105473959309762,
+        0.2892110347747803,
+        8.0392427444458
+      ],
+      "rotation": [
+        2.1607095650411106,
+        20.587971789916388,
+        -1.0961799955683225
+      ],
+      "scale": [
+        0.7311589115136594,
+        0.7311589115136594,
+        0.6926789441518529
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353560,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    },
+    "f3d31a52-4689-45e6-a4d9-e984687b8657": {
+      "name": "Oak_Tree_l_01_LOD",
+      "tags": [
+        "tree-oak"
+      ],
+      "enabled": true,
+      "resource_id": "f3d31a52-4689-45e6-a4d9-e984687b8657",
+      "parent": "6c519586-7862-4bd2-b4b3-e09cbb8ffd7e",
+      "children": [],
+      "position": [
+        -3.7456836700439453,
+        -4.5476742371874934e-8,
+        -7.589611053466797
+      ],
+      "rotation": [
+        -4.6034141694650106e-14,
+        -80.22398192662756,
+        3.613936751758173e-14
+      ],
+      "scale": [
+        0.715000461893639,
+        0.715000461893639,
+        0.715000461893639
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353560,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    },
+    "af1b86eb-040b-4c15-869f-95e6722c293a": {
+      "name": "Buddha Statue",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "af1b86eb-040b-4c15-869f-95e6722c293a",
+      "parent": "36191b03-0630-4d98-939b-02e261ccf5e8",
+      "children": [],
+      "position": [
+        -0.8442680239677429,
+        4.610504150390625,
+        4.490736961364746
+      ],
+      "rotation": [
+        0,
+        83.92645278297323,
+        0
+      ],
+      "scale": [
+        6.698525772575015,
+        6.698525772575015,
+        6.698525772575015
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353482,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    },
+    "577464d6-1c1b-45b5-90ce-40108d454786": {
+      "name": "Rock_Flat_m_2C_01",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "577464d6-1c1b-45b5-90ce-40108d454786",
+      "parent": "b88595c1-9536-49ea-aee5-92ef0714ded1",
+      "children": [],
+      "position": [
+        0.6979072690010071,
+        0.3289955258369446,
+        3.4319944381713867
+      ],
+      "rotation": [
+        -143.2598078043449,
+        84.04436269534571,
+        24.04165922304637
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "asset",
+          "asset": 28353475,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": 100000
+        }
+      }
+    },
+    "4559b1f5-daba-49a7-9274-5af40f72766f": {
+      "name": "Box",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "4559b1f5-daba-49a7-9274-5af40f72766f",
+      "parent": "732a0e76-8dbe-4e12-a963-88d1d9663183",
+      "children": [
+        "1342f056-cdac-4371-8ae1-8ade4fd4a732"
+      ],
+      "position": [
+        -1,
+        1.5,
+        4.396
+      ],
+      "rotation": [
+        180,
+        0,
+        180
+      ],
+      "scale": [
+        3,
+        3,
+        3
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "box",
+          "asset": null,
+          "materialAsset": 28353512,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    },
+    "36191b03-0630-4d98-939b-02e261ccf5e8": {
+      "name": "Scene",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "36191b03-0630-4d98-939b-02e261ccf5e8",
+      "parent": "da1e8933-dc61-11e8-97ae-026349a27a7c",
+      "children": [
+        "732a0e76-8dbe-4e12-a963-88d1d9663183",
+        "b88595c1-9536-49ea-aee5-92ef0714ded1",
+        "6c519586-7862-4bd2-b4b3-e09cbb8ffd7e",
+        "af1b86eb-040b-4c15-869f-95e6722c293a",
+        "ea716d4e-2ab0-43ec-a274-de39cadaec3d",
+        "2038a11e-4471-44c0-9d19-de91df3370ee"
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "script": {
+          "enabled": true,
+          "order": [
+            "artemisPlayback"
+          ],
+          "scripts": {
+            "artemisPlayback": {
+              "enabled": true,
+              "attributes": {
+                "timeline": 28353406,
+                "speed": 1,
+                "onInit": true,
+                "reverse": false,
+                "loop": true,
+                "yoyo": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "ea716d4e-2ab0-43ec-a274-de39cadaec3d": {
+      "name": "Transparent",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "ea716d4e-2ab0-43ec-a274-de39cadaec3d",
+      "parent": "36191b03-0630-4d98-939b-02e261ccf5e8",
+      "children": [],
+      "position": [
+        -1.325413703918457,
+        1.656196080954241,
+        16.689443588256836
+      ],
+      "rotation": [
+        62.44353032320203,
+        39.42308564270195,
+        26.325975604424297
+      ],
+      "scale": [
+        3,
+        3,
+        3
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "plane",
+          "asset": null,
+          "materialAsset": 28353459,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    },
+    "f6941185-6f45-4638-b4a9-7d55417f1f87": {
+      "name": "2D Screen",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "f6941185-6f45-4638-b4a9-7d55417f1f87",
+      "parent": "da1e8933-dc61-11e8-97ae-026349a27a7c",
+      "children": [
+        "3f0392fd-70c7-42ba-a202-935846da641a",
+        "9237ecc4-7918-42b9-8056-770b7a111898",
+        "e8be9196-4897-4a5d-bb1f-8fe21f92e13d"
+      ],
+      "position": [
+        500.0000305175781,
+        0,
+        500.0000305175781
+      ],
+      "rotation": [
+        0,
+        47.47255635682754,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "screen": {
+          "enabled": true,
+          "screenSpace": true,
+          "scaleMode": "blend",
+          "scaleBlend": 0.5,
+          "resolution": [
+            1280,
+            720
+          ],
+          "referenceResolution": [
+            1920,
+            1080
+          ]
+        }
+      }
+    },
+    "3f0392fd-70c7-42ba-a202-935846da641a": {
+      "name": "Text Title",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "3f0392fd-70c7-42ba-a202-935846da641a",
+      "parent": "f6941185-6f45-4638-b4a9-7d55417f1f87",
+      "children": [],
+      "position": [
+        30,
+        -30,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "element": {
+          "enabled": true,
+          "useInput": false,
+          "type": "text",
+          "anchor": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "pivot": [
+            0,
+            1
+          ],
+          "text": "APOLLO AUTO DIMENSIONS",
+          "fontAsset": 28353402,
+          "fontSize": 20,
+          "lineHeight": 20,
+          "spacing": 1,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "textureAsset": null,
+          "width": 287.52,
+          "height": 34.176,
+          "margin": [
+            30,
+            -51.36,
+            -317.52,
+            30
+          ],
+          "alignment": [
+            0.5,
+            0.5
+          ],
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "autoWidth": true,
+          "autoHeight": true,
+          "materialAsset": null,
+          "wrapLines": false,
+          "batchGroupId": null,
+          "mask": false,
+          "spriteAsset": null,
+          "spriteFrame": 0,
+          "pixelsPerUnit": null,
+          "layers": [
+            4
+          ],
+          "outlineColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineThickness": 0.5,
+          "shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "shadowOffset": [
+            0,
+            0
+          ],
+          "autoFitWidth": false,
+          "autoFitHeight": false,
+          "maxLines": null,
+          "minFontSize": 8,
+          "maxFontSize": 20,
+          "enableMarkup": false
+        }
+      }
+    },
+    "9237ecc4-7918-42b9-8056-770b7a111898": {
+      "name": "btn-default",
+      "tags": [
+        "button-dimensions"
+      ],
+      "enabled": true,
+      "resource_id": "9237ecc4-7918-42b9-8056-770b7a111898",
+      "parent": "f6941185-6f45-4638-b4a9-7d55417f1f87",
+      "children": [
+        "0a685b63-b358-4f09-b255-921e4e63a85b"
+      ],
+      "position": [
+        30,
+        30,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "components": {
+        "element": {
+          "enabled": true,
+          "useInput": true,
+          "type": "image",
+          "anchor": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "text": "",
+          "fontAsset": null,
+          "fontSize": 32,
+          "lineHeight": 32,
+          "spacing": 1,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "textureAsset": 28353443,
+          "width": 600,
+          "height": 128,
+          "margin": [
+            30,
+            30,
+            -630,
+            -158
+          ],
+          "alignment": [
+            0.5,
+            0.5
+          ],
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "autoWidth": false,
+          "autoHeight": false,
+          "materialAsset": null,
+          "wrapLines": false,
+          "batchGroupId": null,
+          "mask": false,
+          "spriteAsset": null,
+          "spriteFrame": 0,
+          "pixelsPerUnit": null,
+          "layers": [
+            4
+          ],
+          "outlineColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineThickness": 0,
+          "shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "shadowOffset": [
+            0,
+            0
+          ],
+          "autoFitWidth": false,
+          "autoFitHeight": false,
+          "maxLines": null,
+          "minFontSize": 8,
+          "maxFontSize": 32,
+          "enableMarkup": false
+        },
+        "script": {
+          "enabled": true,
+          "order": [
+            "btnStates"
+          ],
+          "scripts": {
+            "btnStates": {
+              "enabled": true,
+              "attributes": {
+                "hoverAsset": 28353424,
+                "activeAsset": 28353447
+              }
+            }
+          }
+        }
+      }
+    },
+    "0a685b63-b358-4f09-b255-921e4e63a85b": {
+      "name": "Text",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "0a685b63-b358-4f09-b255-921e4e63a85b",
+      "parent": "9237ecc4-7918-42b9-8056-770b7a111898",
+      "children": [],
+      "position": [
+        1.4210854715202004e-14,
+        -3.552713678800501e-15,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.8,
+        1.8,
+        1.8
+      ],
+      "components": {
+        "element": {
+          "enabled": true,
+          "useInput": false,
+          "type": "text",
+          "anchor": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "text": "SWITCH DIMS",
+          "fontAsset": 28353402,
+          "fontSize": 30,
+          "lineHeight": 30,
+          "spacing": 1,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "opacity": 0.9,
+          "textureAsset": null,
+          "width": 214.53,
+          "height": 32.04,
+          "margin": [
+            -107.265,
+            -16.02,
+            -107.265,
+            -16.02
+          ],
+          "alignment": [
+            0.5,
+            0.5
+          ],
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "autoWidth": true,
+          "autoHeight": true,
+          "materialAsset": null,
+          "wrapLines": false,
+          "batchGroupId": null,
+          "mask": false,
+          "spriteAsset": null,
+          "spriteFrame": 0,
+          "pixelsPerUnit": null,
+          "layers": [
+            4
+          ],
+          "outlineColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineThickness": 0,
+          "shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "shadowOffset": [
+            0,
+            0
+          ],
+          "autoFitWidth": false,
+          "autoFitHeight": false,
+          "maxLines": null,
+          "minFontSize": 8,
+          "maxFontSize": 30,
+          "enableMarkup": false
+        }
+      }
+    },
+    "e8be9196-4897-4a5d-bb1f-8fe21f92e13d": {
+      "name": "Effect Titles",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "e8be9196-4897-4a5d-bb1f-8fe21f92e13d",
+      "parent": "f6941185-6f45-4638-b4a9-7d55417f1f87",
+      "children": [
+        "52f71398-f2f0-4593-87f3-d941352c3820",
+        "26c220e4-cb38-4038-8f27-abe2e95578d4",
+        "2a472cda-a457-44f8-b8bd-81a7ea16e947",
+        "e4a3e0da-a48b-4430-bd27-955838652d32",
+        "5e915891-b16a-4d09-b5eb-937d3e58c926"
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {}
+    },
+    "52f71398-f2f0-4593-87f3-d941352c3820": {
+      "name": "Text Title",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "52f71398-f2f0-4593-87f3-d941352c3820",
+      "parent": "e8be9196-4897-4a5d-bb1f-8fe21f92e13d",
+      "children": [],
+      "position": [
+        29.99993896484375,
+        -60.017099380493164,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "element": {
+          "enabled": true,
+          "useInput": false,
+          "type": "text",
+          "anchor": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "pivot": [
+            0,
+            1
+          ],
+          "text": "Point to point dimension",
+          "fontAsset": 28353402,
+          "fontSize": 17,
+          "lineHeight": 17,
+          "spacing": 1,
+          "color": [
+            0.8823529411764706,
+            0.9529411764705882,
+            0.12549019607843137
+          ],
+          "opacity": 1,
+          "textureAsset": null,
+          "width": 219.368,
+          "height": 18.156,
+          "margin": [
+            30,
+            -78.173,
+            -249.368,
+            60.017
+          ],
+          "alignment": [
+            0.5,
+            0.5
+          ],
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "autoWidth": true,
+          "autoHeight": true,
+          "materialAsset": null,
+          "wrapLines": false,
+          "batchGroupId": null,
+          "mask": false,
+          "spriteAsset": null,
+          "spriteFrame": 0,
+          "pixelsPerUnit": null,
+          "layers": [
+            4
+          ],
+          "outlineColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineThickness": 0.5,
+          "shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "shadowOffset": [
+            0,
+            0
+          ],
+          "autoFitWidth": false,
+          "autoFitHeight": false,
+          "maxLines": null,
+          "minFontSize": 8,
+          "maxFontSize": 17,
+          "enableMarkup": false
+        }
+      }
+    },
+    "26c220e4-cb38-4038-8f27-abe2e95578d4": {
+      "name": "Text Title",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "26c220e4-cb38-4038-8f27-abe2e95578d4",
+      "parent": "e8be9196-4897-4a5d-bb1f-8fe21f92e13d",
+      "children": [],
+      "position": [
+        29.99993896484375,
+        -90,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "element": {
+          "enabled": true,
+          "useInput": false,
+          "type": "text",
+          "anchor": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "pivot": [
+            0,
+            1
+          ],
+          "text": "Length/Width/Height from bounding box",
+          "fontAsset": 28353402,
+          "fontSize": 17,
+          "lineHeight": 17,
+          "spacing": 1,
+          "color": [
+            0.8823529411764706,
+            0.9529411764705882,
+            0.12549019607843137
+          ],
+          "opacity": 1,
+          "textureAsset": null,
+          "width": 365.313,
+          "height": 18.156,
+          "margin": [
+            30,
+            -108.156,
+            -395.313,
+            90
+          ],
+          "alignment": [
+            0.5,
+            0.5
+          ],
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "autoWidth": true,
+          "autoHeight": true,
+          "materialAsset": null,
+          "wrapLines": false,
+          "batchGroupId": null,
+          "mask": false,
+          "spriteAsset": null,
+          "spriteFrame": 0,
+          "pixelsPerUnit": null,
+          "layers": [
+            4
+          ],
+          "outlineColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineThickness": 0.5,
+          "shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "shadowOffset": [
+            0,
+            0
+          ],
+          "autoFitWidth": false,
+          "autoFitHeight": false,
+          "maxLines": null,
+          "minFontSize": 8,
+          "maxFontSize": 17,
+          "enableMarkup": false
+        }
+      }
+    },
+    "2a472cda-a457-44f8-b8bd-81a7ea16e947": {
+      "name": "Text Title",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "2a472cda-a457-44f8-b8bd-81a7ea16e947",
+      "parent": "e8be9196-4897-4a5d-bb1f-8fe21f92e13d",
+      "children": [],
+      "position": [
+        29.99993896484375,
+        -120,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "element": {
+          "enabled": true,
+          "useInput": false,
+          "type": "text",
+          "anchor": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "pivot": [
+            0,
+            1
+          ],
+          "text": "Editor properties per dimension line",
+          "fontAsset": 28353402,
+          "fontSize": 17,
+          "lineHeight": 17,
+          "spacing": 1,
+          "color": [
+            0.8823529411764706,
+            0.9529411764705882,
+            0.12549019607843137
+          ],
+          "opacity": 1,
+          "textureAsset": null,
+          "width": 321.368,
+          "height": 18.156,
+          "margin": [
+            30,
+            -138.156,
+            -351.368,
+            120
+          ],
+          "alignment": [
+            0.5,
+            0.5
+          ],
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "autoWidth": true,
+          "autoHeight": true,
+          "materialAsset": null,
+          "wrapLines": false,
+          "batchGroupId": null,
+          "mask": false,
+          "spriteAsset": null,
+          "spriteFrame": 0,
+          "pixelsPerUnit": null,
+          "layers": [
+            4
+          ],
+          "outlineColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineThickness": 0.5,
+          "shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "shadowOffset": [
+            0,
+            0
+          ],
+          "autoFitWidth": false,
+          "autoFitHeight": false,
+          "maxLines": null,
+          "minFontSize": 8,
+          "maxFontSize": 17,
+          "enableMarkup": false
+        }
+      }
+    },
+    "e4a3e0da-a48b-4430-bd27-955838652d32": {
+      "name": "Text Title",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "e4a3e0da-a48b-4430-bd27-955838652d32",
+      "parent": "e8be9196-4897-4a5d-bb1f-8fe21f92e13d",
+      "children": [],
+      "position": [
+        29.99993896484375,
+        -150,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "element": {
+          "enabled": true,
+          "useInput": false,
+          "type": "text",
+          "anchor": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "pivot": [
+            0,
+            1
+          ],
+          "text": "No coding required, drag and drop script",
+          "fontAsset": 28353402,
+          "fontSize": 17,
+          "lineHeight": 17,
+          "spacing": 1,
+          "color": [
+            0.8823529411764706,
+            0.9529411764705882,
+            0.12549019607843137
+          ],
+          "opacity": 1,
+          "textureAsset": null,
+          "width": 355.844,
+          "height": 18.156,
+          "margin": [
+            30,
+            -168.156,
+            -385.844,
+            150
+          ],
+          "alignment": [
+            0.5,
+            0.5
+          ],
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "autoWidth": true,
+          "autoHeight": true,
+          "materialAsset": null,
+          "wrapLines": false,
+          "batchGroupId": null,
+          "mask": false,
+          "spriteAsset": null,
+          "spriteFrame": 0,
+          "pixelsPerUnit": null,
+          "layers": [
+            4
+          ],
+          "outlineColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineThickness": 0.5,
+          "shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "shadowOffset": [
+            0,
+            0
+          ],
+          "autoFitWidth": false,
+          "autoFitHeight": false,
+          "maxLines": null,
+          "minFontSize": 8,
+          "maxFontSize": 17,
+          "enableMarkup": false
+        }
+      }
+    },
+    "a03910cc-6d2c-46d5-8a00-595a9b4747f2": {
+      "name": "Dimension LWH (box)",
+      "tags": [
+        "dims"
+      ],
+      "enabled": true,
+      "resource_id": "a03910cc-6d2c-46d5-8a00-595a9b4747f2",
+      "parent": "2038a11e-4471-44c0-9d19-de91df3370ee",
+      "children": [],
+      "position": [
+        -1.000001072883606,
+        1.5,
+        4.395999908447266
+      ],
+      "rotation": [
+        180,
+        -1.7113934112769111,
+        180
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "script": {
+          "enabled": true,
+          "order": [
+            "dimBounding"
+          ],
+          "scripts": {
+            "dimBounding": {
+              "enabled": true,
+              "attributes": {
+                "modelEntity": "4559b1f5-daba-49a7-9274-5af40f72766f",
+                "lineNumberText": "42b7120c-6ecc-44fc-aff5-e0810be5bb6c",
+                "lineTitleText": "e0c5532b-2253-4c6c-80e0-21805ec98762",
+                "lineLeftArrow": "eb946674-2bf3-4fae-b27f-a0dfb935b661",
+                "lineRightArrow": "91526eb9-5ed1-4bf4-8b1a-82b6fbdf8dad",
+                "lineMaterial": 28353661,
+                "lineOffsetMat": 28353667,
+                "overrideDistance": 0,
+                "precision": 2,
+                "offsetDistance": 1,
+                "thickness": 0.02,
+                "cameraEntity": null
+              }
+            }
+          }
+        }
+      }
+    },
+    "06475dad-e4e3-4849-8cfb-2cdff3704e0f": {
+      "name": "Dim Primitive Objects",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "06475dad-e4e3-4849-8cfb-2cdff3704e0f",
+      "parent": "da1e8933-dc61-11e8-97ae-026349a27a7c",
+      "children": [
+        "f3d2b242-65b1-494b-8cdb-0a0d8883a65b",
+        "6adc474e-8f9e-4be6-ad69-a5d481a8d265",
+        "eb946674-2bf3-4fae-b27f-a0dfb935b661",
+        "91526eb9-5ed1-4bf4-8b1a-82b6fbdf8dad",
+        "27d34597-11ca-4499-a18e-e8cc0149e13f",
+        "74721def-c100-4528-8cd8-a415100e0d94"
+      ],
+      "position": [
+        82.96074728413838,
+        2.842170943040401e-14,
+        149.95823421962208
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {}
+    },
+    "eb946674-2bf3-4fae-b27f-a0dfb935b661": {
+      "name": "Left Arrow",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "eb946674-2bf3-4fae-b27f-a0dfb935b661",
+      "parent": "06475dad-e4e3-4849-8cfb-2cdff3704e0f",
+      "children": [
+        "db09c21b-a54d-4776-9213-ab59d1e20eb5"
+      ],
+      "position": [
+        0,
+        0.17555094344677738,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        90
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {}
+    },
+    "db09c21b-a54d-4776-9213-ab59d1e20eb5": {
+      "name": "Model",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "db09c21b-a54d-4776-9213-ab59d1e20eb5",
+      "parent": "eb946674-2bf3-4fae-b27f-a0dfb935b661",
+      "children": [],
+      "position": [
+        5.960464477539063e-8,
+        -0.07733030507981895,
+        -0.0000095367431640625
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.08502761109250342,
+        0.1594267707984439,
+        0.08502761109250342
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "cone",
+          "asset": null,
+          "materialAsset": 28353666,
+          "castShadows": false,
+          "castShadowsLightmap": false,
+          "receiveShadows": false,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    },
+    "91526eb9-5ed1-4bf4-8b1a-82b6fbdf8dad": {
+      "name": "Right Arrow",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "91526eb9-5ed1-4bf4-8b1a-82b6fbdf8dad",
+      "parent": "06475dad-e4e3-4849-8cfb-2cdff3704e0f",
+      "children": [
+        "9ac94b3a-50c4-46e0-9ade-a5b15e761b30"
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -90
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {}
+    },
+    "9ac94b3a-50c4-46e0-9ade-a5b15e761b30": {
+      "name": "Model",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "9ac94b3a-50c4-46e0-9ade-a5b15e761b30",
+      "parent": "91526eb9-5ed1-4bf4-8b1a-82b6fbdf8dad",
+      "children": [],
+      "position": [
+        -7.152557373046875e-7,
+        -0.077,
+        -0.0000095367431640625
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.08502761109250342,
+        0.1594267707984439,
+        0.08502761109250342
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "cone",
+          "asset": null,
+          "materialAsset": 28353666,
+          "castShadows": false,
+          "castShadowsLightmap": false,
+          "receiveShadows": false,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    },
+    "42b7120c-6ecc-44fc-aff5-e0810be5bb6c": {
+      "name": "Line Number",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "42b7120c-6ecc-44fc-aff5-e0810be5bb6c",
+      "parent": "f3d2b242-65b1-494b-8cdb-0a0d8883a65b",
+      "children": [],
+      "position": [
+        0,
+        1.185999989509554,
+        -0.7805633544921875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "components": {
+        "element": {
+          "enabled": true,
+          "type": "text",
+          "anchor": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "text": "%number%m",
+          "key": null,
+          "fontAsset": 28353402,
+          "fontSize": 45,
+          "minFontSize": 8,
+          "maxFontSize": 32,
+          "autoFitWidth": false,
+          "autoFitHeight": false,
+          "maxLines": null,
+          "lineHeight": 45,
+          "wrapLines": true,
+          "spacing": 1,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "textureAsset": null,
+          "spriteAsset": null,
+          "spriteFrame": 0,
+          "pixelsPerUnit": null,
+          "width": 324.495,
+          "height": 64.08,
+          "margin": [
+            -162.247,
+            -22.844,
+            -162.247,
+            -25.216
+          ],
+          "alignment": [
+            0.5,
+            0.5
+          ],
+          "outlineColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineThickness": 0.3,
+          "shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "shadowOffset": [
+            0,
+            0
+          ],
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "materialAsset": null,
+          "autoWidth": true,
+          "autoHeight": true,
+          "useInput": false,
+          "batchGroupId": null,
+          "mask": false,
+          "layers": [
+            4
+          ],
+          "enableMarkup": false
+        }
+      }
+    },
+    "e0c5532b-2253-4c6c-80e0-21805ec98762": {
+      "name": "Line Title",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "e0c5532b-2253-4c6c-80e0-21805ec98762",
+      "parent": "f3d2b242-65b1-494b-8cdb-0a0d8883a65b",
+      "children": [],
+      "position": [
+        0,
+        0.5770000219344809,
+        -0.7805633544921875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "components": {
+        "element": {
+          "enabled": true,
+          "type": "text",
+          "anchor": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "text": "A subtitle",
+          "key": null,
+          "fontAsset": 28353402,
+          "fontSize": 20,
+          "minFontSize": 8,
+          "maxFontSize": 32,
+          "autoFitWidth": false,
+          "autoFitHeight": false,
+          "maxLines": null,
+          "lineHeight": 40,
+          "wrapLines": true,
+          "spacing": 1,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "textureAsset": null,
+          "spriteAsset": null,
+          "spriteFrame": 0,
+          "pixelsPerUnit": null,
+          "width": 164.064,
+          "height": 34.176,
+          "margin": [
+            -51.27,
+            -10.103,
+            -51.27,
+            -11.257
+          ],
+          "alignment": [
+            0.5,
+            0.5
+          ],
+          "outlineColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineThickness": 0.3,
+          "shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "shadowOffset": [
+            0,
+            0
+          ],
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "materialAsset": null,
+          "autoWidth": true,
+          "autoHeight": true,
+          "useInput": false,
+          "batchGroupId": null,
+          "mask": false,
+          "layers": [
+            4
+          ],
+          "enableMarkup": false
+        }
+      }
+    },
+    "5a783674-59f0-4441-bd11-b7b4f8d884dd": {
+      "name": "Sphere",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "5a783674-59f0-4441-bd11-b7b4f8d884dd",
+      "parent": "732a0e76-8dbe-4e12-a963-88d1d9663183",
+      "children": [],
+      "position": [
+        0.9621299760156834,
+        0.5051206267328812,
+        -1.6654561170593816
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "sphere",
+          "asset": null,
+          "materialAsset": 28353512,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    },
+    "f3d2b242-65b1-494b-8cdb-0a0d8883a65b": {
+      "name": "Text Big",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "f3d2b242-65b1-494b-8cdb-0a0d8883a65b",
+      "parent": "06475dad-e4e3-4849-8cfb-2cdff3704e0f",
+      "children": [
+        "42b7120c-6ecc-44fc-aff5-e0810be5bb6c",
+        "e0c5532b-2253-4c6c-80e0-21805ec98762"
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {}
+    },
+    "6adc474e-8f9e-4be6-ad69-a5d481a8d265": {
+      "name": "Text Small",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "6adc474e-8f9e-4be6-ad69-a5d481a8d265",
+      "parent": "06475dad-e4e3-4849-8cfb-2cdff3704e0f",
+      "children": [
+        "4a0c4a94-87aa-435a-8c13-3074f5dfaddd",
+        "56888adf-6ae0-45e5-bc90-4f50e48dda74"
+      ],
+      "position": [
+        3.2584363020311713,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {}
+    },
+    "4a0c4a94-87aa-435a-8c13-3074f5dfaddd": {
+      "name": "Line Number",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "4a0c4a94-87aa-435a-8c13-3074f5dfaddd",
+      "parent": "6adc474e-8f9e-4be6-ad69-a5d481a8d265",
+      "children": [],
+      "position": [
+        0,
+        1.185999989509554,
+        -0.7805633544921875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "components": {
+        "element": {
+          "enabled": true,
+          "type": "text",
+          "anchor": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "text": "%number%m",
+          "key": null,
+          "fontAsset": 28353932,
+          "fontSize": 17,
+          "minFontSize": 8,
+          "maxFontSize": 32,
+          "autoFitWidth": false,
+          "autoFitHeight": false,
+          "maxLines": null,
+          "lineHeight": 17,
+          "wrapLines": true,
+          "spacing": 1,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "opacity": 0.7,
+          "textureAsset": null,
+          "spriteAsset": null,
+          "spriteFrame": 0,
+          "pixelsPerUnit": null,
+          "width": 106.692,
+          "height": 25.95,
+          "margin": [
+            -53.346,
+            -11.789,
+            -53.346,
+            -14.161
+          ],
+          "alignment": [
+            0.5,
+            0.5
+          ],
+          "outlineColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "outlineThickness": 0.25,
+          "shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "shadowOffset": [
+            0,
+            0
+          ],
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "materialAsset": null,
+          "autoWidth": true,
+          "autoHeight": false,
+          "useInput": false,
+          "batchGroupId": null,
+          "mask": false,
+          "layers": [
+            4
+          ],
+          "enableMarkup": false
+        }
+      }
+    },
+    "56888adf-6ae0-45e5-bc90-4f50e48dda74": {
+      "name": "Line Title",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "56888adf-6ae0-45e5-bc90-4f50e48dda74",
+      "parent": "6adc474e-8f9e-4be6-ad69-a5d481a8d265",
+      "children": [],
+      "position": [
+        0,
+        0.5770000219344809,
+        -0.7805633544921875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "components": {
+        "element": {
+          "enabled": true,
+          "type": "text",
+          "anchor": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "text": "A subtitle",
+          "key": null,
+          "fontAsset": 28353932,
+          "fontSize": 13,
+          "minFontSize": 8,
+          "maxFontSize": 32,
+          "autoFitWidth": false,
+          "autoFitHeight": false,
+          "maxLines": null,
+          "lineHeight": 17,
+          "wrapLines": true,
+          "spacing": 1,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "opacity": 0.7,
+          "textureAsset": null,
+          "spriteAsset": null,
+          "spriteFrame": 0,
+          "pixelsPerUnit": null,
+          "width": 77.554,
+          "height": 17.748,
+          "margin": [
+            -38.777,
+            -8.297,
+            -38.777,
+            -9.451
+          ],
+          "alignment": [
+            0.5,
+            0.5
+          ],
+          "outlineColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "outlineThickness": 0.25,
+          "shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "shadowOffset": [
+            0,
+            0
+          ],
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "materialAsset": null,
+          "autoWidth": true,
+          "autoHeight": true,
+          "useInput": false,
+          "batchGroupId": null,
+          "mask": false,
+          "layers": [
+            4
+          ],
+          "enableMarkup": false
+        }
+      }
+    },
+    "c30203ac-44c1-448b-b864-f0abfe9046d5": {
+      "name": "Dimension LWH (Transparent)",
+      "tags": [
+        "dims"
+      ],
+      "enabled": true,
+      "resource_id": "c30203ac-44c1-448b-b864-f0abfe9046d5",
+      "parent": "2038a11e-4471-44c0-9d19-de91df3370ee",
+      "children": [],
+      "position": [
+        -1.000001072883606,
+        1.5,
+        4.395999908447266
+      ],
+      "rotation": [
+        180,
+        -1.7113934112769111,
+        180
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "script": {
+          "enabled": true,
+          "order": [
+            "dimBounding"
+          ],
+          "scripts": {
+            "dimBounding": {
+              "enabled": true,
+              "attributes": {
+                "modelEntity": "ea716d4e-2ab0-43ec-a274-de39cadaec3d",
+                "lineNumberText": "42b7120c-6ecc-44fc-aff5-e0810be5bb6c",
+                "lineTitleText": "e0c5532b-2253-4c6c-80e0-21805ec98762",
+                "lineLeftArrow": "eb946674-2bf3-4fae-b27f-a0dfb935b661",
+                "lineRightArrow": "91526eb9-5ed1-4bf4-8b1a-82b6fbdf8dad",
+                "lineMaterial": 28353661,
+                "lineOffsetMat": 28353667,
+                "overrideDistance": 0,
+                "precision": 2,
+                "offsetDistance": 0.5,
+                "thickness": 0.02,
+                "cameraEntity": "8dd0df33-641d-497c-a838-b6c337799951"
+              }
+            }
+          }
+        }
+      }
+    },
+    "2038a11e-4471-44c0-9d19-de91df3370ee": {
+      "name": "Dimensions",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "2038a11e-4471-44c0-9d19-de91df3370ee",
+      "parent": "36191b03-0630-4d98-939b-02e261ccf5e8",
+      "children": [
+        "ebeb62f4-7df6-497b-a6c7-6fe585942f99",
+        "ce6c98df-2c7d-4128-81f1-be473392dd9e",
+        "c30203ac-44c1-448b-b864-f0abfe9046d5",
+        "5c68f467-2bf3-43c1-8e11-62bb8c380959",
+        "a03910cc-6d2c-46d5-8a00-595a9b4747f2",
+        "d299d19f-62bc-468b-a1d6-da4f90dcf325",
+        "e0a9c799-c999-4447-b693-66a99aef49f5"
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {}
+    },
+    "74721def-c100-4528-8cd8-a415100e0d94": {
+      "name": "Right Sphere",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "74721def-c100-4528-8cd8-a415100e0d94",
+      "parent": "06475dad-e4e3-4849-8cfb-2cdff3704e0f",
+      "children": [
+        "b1d240b5-33c4-4fd0-b41e-334c307dd320"
+      ],
+      "position": [
+        3.2910763509905934,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -90
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {}
+    },
+    "27d34597-11ca-4499-a18e-e8cc0149e13f": {
+      "name": "Left Sphere",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "27d34597-11ca-4499-a18e-e8cc0149e13f",
+      "parent": "06475dad-e4e3-4849-8cfb-2cdff3704e0f",
+      "children": [
+        "dd8dbc93-0a6e-4cd8-800d-661c00c6adfc"
+      ],
+      "position": [
+        3.29107666015625,
+        0.17555093765255947,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        90.00000000000003
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {}
+    },
+    "dd8dbc93-0a6e-4cd8-800d-661c00c6adfc": {
+      "name": "Model",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "dd8dbc93-0a6e-4cd8-800d-661c00c6adfc",
+      "parent": "27d34597-11ca-4499-a18e-e8cc0149e13f",
+      "children": [],
+      "position": [
+        5.960464477539063e-8,
+        0,
+        -0.0000095367431640625
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "sphere",
+          "asset": null,
+          "materialAsset": 28354001,
+          "castShadows": false,
+          "castShadowsLightmap": false,
+          "receiveShadows": false,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    },
+    "b1d240b5-33c4-4fd0-b41e-334c307dd320": {
+      "name": "Model",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "b1d240b5-33c4-4fd0-b41e-334c307dd320",
+      "parent": "74721def-c100-4528-8cd8-a415100e0d94",
+      "children": [],
+      "position": [
+        0,
+        0,
+        -0.0000152587890625
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "sphere",
+          "asset": null,
+          "materialAsset": 28354001,
+          "castShadows": false,
+          "castShadowsLightmap": false,
+          "receiveShadows": false,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    },
+    "d299d19f-62bc-468b-a1d6-da4f90dcf325": {
+      "name": "Dimension Points (Cylinder)",
+      "tags": [
+        "dims"
+      ],
+      "enabled": true,
+      "resource_id": "d299d19f-62bc-468b-a1d6-da4f90dcf325",
+      "parent": "2038a11e-4471-44c0-9d19-de91df3370ee",
+      "children": [],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "script": {
+          "enabled": true,
+          "order": [
+            "dimPoints"
+          ],
+          "scripts": {
+            "dimPoints": {
+              "enabled": true,
+              "attributes": {
+                "point1": "fdaadd1f-68a9-4b62-98a6-c62c6f5eb992",
+                "point2": "1342f056-cdac-4371-8ae1-8ade4fd4a732",
+                "offsetDistance": 0,
+                "overrideDistance": 0,
+                "thickness": 0.02,
+                "lineMaterial": 28353661,
+                "offsetAxis": "z",
+                "lineNumberText": "42b7120c-6ecc-44fc-aff5-e0810be5bb6c",
+                "lineTitleText": "e0c5532b-2253-4c6c-80e0-21805ec98762",
+                "cameraEntity": "8dd0df33-641d-497c-a838-b6c337799951",
+                "lineTitle": "Base to Cylinder",
+                "precision": 3,
+                "lineLeftArrow": "eb946674-2bf3-4fae-b27f-a0dfb935b661",
+                "lineRightArrow": "91526eb9-5ed1-4bf4-8b1a-82b6fbdf8dad",
+                "lineOffsetMat": 28353667
+              }
+            }
+          }
+        }
+      }
+    },
+    "1342f056-cdac-4371-8ae1-8ade4fd4a732": {
+      "name": "Side for Dim",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "1342f056-cdac-4371-8ae1-8ade4fd4a732",
+      "parent": "4559b1f5-daba-49a7-9274-5af40f72766f",
+      "children": [],
+      "position": [
+        -0.49471177708789704,
+        1.490116130486996e-8,
+        0.5022285295688317
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {}
+    },
+    "fdaadd1f-68a9-4b62-98a6-c62c6f5eb992": {
+      "name": "Side for Dim",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "fdaadd1f-68a9-4b62-98a6-c62c6f5eb992",
+      "parent": "d633aa00-d99b-446b-8b70-d6527c418470",
+      "children": [],
+      "position": [
+        -0.16208009675579205,
+        0,
+        0.45770746526514317
+      ],
+      "rotation": [
+        0,
+        1.7126275008650934e-38,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {}
+    },
+    "ce6c98df-2c7d-4128-81f1-be473392dd9e": {
+      "name": "Dimension LWH (statue)",
+      "tags": [
+        "dims"
+      ],
+      "enabled": true,
+      "resource_id": "ce6c98df-2c7d-4128-81f1-be473392dd9e",
+      "parent": "2038a11e-4471-44c0-9d19-de91df3370ee",
+      "children": [],
+      "position": [
+        -1.000001072883606,
+        1.5,
+        4.395999908447266
+      ],
+      "rotation": [
+        180,
+        -1.7113934112769111,
+        180
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "script": {
+          "enabled": true,
+          "order": [
+            "dimBounding"
+          ],
+          "scripts": {
+            "dimBounding": {
+              "enabled": true,
+              "attributes": {
+                "modelEntity": "af1b86eb-040b-4c15-869f-95e6722c293a",
+                "lineNumberText": "4a0c4a94-87aa-435a-8c13-3074f5dfaddd",
+                "lineTitleText": "56888adf-6ae0-45e5-bc90-4f50e48dda74",
+                "lineLeftArrow": "27d34597-11ca-4499-a18e-e8cc0149e13f",
+                "lineRightArrow": "74721def-c100-4528-8cd8-a415100e0d94",
+                "lineMaterial": 28353969,
+                "lineOffsetMat": 28353970,
+                "overrideDistance": 0,
+                "precision": 2,
+                "offsetDistance": 0,
+                "thickness": 0.02,
+                "cameraEntity": "8dd0df33-641d-497c-a838-b6c337799951"
+              }
+            }
+          }
+        }
+      }
+    },
+    "ebeb62f4-7df6-497b-a6c7-6fe585942f99": {
+      "name": "Dimension LWH (floor)",
+      "tags": [
+        "dims"
+      ],
+      "enabled": true,
+      "resource_id": "ebeb62f4-7df6-497b-a6c7-6fe585942f99",
+      "parent": "2038a11e-4471-44c0-9d19-de91df3370ee",
+      "children": [],
+      "position": [
+        -1.000001072883606,
+        1.5,
+        4.395999908447266
+      ],
+      "rotation": [
+        180,
+        -1.7113934112769111,
+        180
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "script": {
+          "enabled": true,
+          "order": [
+            "dimBounding"
+          ],
+          "scripts": {
+            "dimBounding": {
+              "enabled": true,
+              "attributes": {
+                "modelEntity": "f0873735-f6c7-43de-b24d-24158fcb98ec",
+                "lineNumberText": "42b7120c-6ecc-44fc-aff5-e0810be5bb6c",
+                "lineTitleText": "e0c5532b-2253-4c6c-80e0-21805ec98762",
+                "lineLeftArrow": "eb946674-2bf3-4fae-b27f-a0dfb935b661",
+                "lineRightArrow": "91526eb9-5ed1-4bf4-8b1a-82b6fbdf8dad",
+                "lineMaterial": 28353661,
+                "lineOffsetMat": 28353667,
+                "overrideDistance": 0,
+                "precision": 0,
+                "offsetDistance": 1,
+                "thickness": 0.02,
+                "cameraEntity": "8dd0df33-641d-497c-a838-b6c337799951"
+              }
+            }
+          }
+        }
+      }
+    },
+    "e0a9c799-c999-4447-b693-66a99aef49f5": {
+      "name": "Dimension Points (rocks)",
+      "tags": [
+        "dims"
+      ],
+      "enabled": true,
+      "resource_id": "e0a9c799-c999-4447-b693-66a99aef49f5",
+      "parent": "2038a11e-4471-44c0-9d19-de91df3370ee",
+      "children": [],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "script": {
+          "enabled": true,
+          "order": [
+            "dimPoints"
+          ],
+          "scripts": {
+            "dimPoints": {
+              "enabled": true,
+              "attributes": {
+                "point1": "0ed9cf06-7385-4aa3-8c2b-97ee9a0ef88d",
+                "point2": "15f5189c-0b95-4217-a672-12c1819e72d9",
+                "offsetDistance": 1,
+                "overrideDistance": 0,
+                "thickness": 0.02,
+                "lineMaterial": 28353661,
+                "offsetAxis": "y",
+                "lineNumberText": "42b7120c-6ecc-44fc-aff5-e0810be5bb6c",
+                "lineTitleText": "e0c5532b-2253-4c6c-80e0-21805ec98762",
+                "cameraEntity": "8dd0df33-641d-497c-a838-b6c337799951",
+                "lineTitle": "Magic rocks",
+                "precision": 2,
+                "lineLeftArrow": "eb946674-2bf3-4fae-b27f-a0dfb935b661",
+                "lineRightArrow": "91526eb9-5ed1-4bf4-8b1a-82b6fbdf8dad",
+                "lineOffsetMat": 28353667
+              }
+            }
+          }
+        }
+      }
+    },
+    "5c68f467-2bf3-43c1-8e11-62bb8c380959": {
+      "name": "Dimension LWH (Tree)",
+      "tags": [
+        "dims"
+      ],
+      "enabled": true,
+      "resource_id": "5c68f467-2bf3-43c1-8e11-62bb8c380959",
+      "parent": "2038a11e-4471-44c0-9d19-de91df3370ee",
+      "children": [],
+      "position": [
+        -1.000001072883606,
+        1.5,
+        4.395999908447266
+      ],
+      "rotation": [
+        180,
+        -1.7113934112769111,
+        180
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "script": {
+          "enabled": true,
+          "order": [
+            "dimBounding"
+          ],
+          "scripts": {
+            "dimBounding": {
+              "enabled": true,
+              "attributes": {
+                "modelEntity": "9a574c5a-8301-42e7-9e8a-b318464bbdb9",
+                "lineNumberText": "42b7120c-6ecc-44fc-aff5-e0810be5bb6c",
+                "lineTitleText": "e0c5532b-2253-4c6c-80e0-21805ec98762",
+                "lineLeftArrow": "eb946674-2bf3-4fae-b27f-a0dfb935b661",
+                "lineRightArrow": "91526eb9-5ed1-4bf4-8b1a-82b6fbdf8dad",
+                "lineMaterial": 28353661,
+                "lineOffsetMat": 28353667,
+                "overrideDistance": 0,
+                "precision": 2,
+                "offsetDistance": 0,
+                "thickness": 0.02,
+                "cameraEntity": "8dd0df33-641d-497c-a838-b6c337799951"
+              }
+            }
+          }
+        }
+      }
+    },
+    "5e915891-b16a-4d09-b5eb-937d3e58c926": {
+      "name": "Text Title",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "5e915891-b16a-4d09-b5eb-937d3e58c926",
+      "parent": "e8be9196-4897-4a5d-bb1f-8fe21f92e13d",
+      "children": [],
+      "position": [
+        29.99993896484375,
+        -180,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "element": {
+          "enabled": true,
+          "useInput": false,
+          "type": "text",
+          "anchor": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "pivot": [
+            0,
+            1
+          ],
+          "text": "Full source code provided",
+          "fontAsset": 28353402,
+          "fontSize": 17,
+          "lineHeight": 17,
+          "spacing": 1,
+          "color": [
+            0.8823529411764706,
+            0.9529411764705882,
+            0.12549019607843137
+          ],
+          "opacity": 1,
+          "textureAsset": null,
+          "width": 226.882,
+          "height": 18.156,
+          "margin": [
+            30,
+            -198.156,
+            -256.882,
+            180
+          ],
+          "alignment": [
+            0.5,
+            0.5
+          ],
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "autoWidth": true,
+          "autoHeight": true,
+          "materialAsset": null,
+          "wrapLines": false,
+          "batchGroupId": null,
+          "mask": false,
+          "spriteAsset": null,
+          "spriteFrame": 0,
+          "pixelsPerUnit": null,
+          "layers": [
+            4
+          ],
+          "outlineColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outlineThickness": 0.5,
+          "shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "shadowOffset": [
+            0,
+            0
+          ],
+          "autoFitWidth": false,
+          "autoFitHeight": false,
+          "maxLines": null,
+          "minFontSize": 8,
+          "maxFontSize": 17,
+          "enableMarkup": false
+        }
+      }
+    },
+    "3595358b-2b87-42f6-9de3-10f551190446": {
+      "name": "Sphere",
+      "tags": [],
+      "enabled": true,
+      "resource_id": "3595358b-2b87-42f6-9de3-10f551190446",
+      "parent": "da1e8933-dc61-11e8-97ae-026349a27a7c",
+      "children": [],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "components": {
+        "model": {
+          "enabled": true,
+          "type": "sphere",
+          "asset": null,
+          "materialAsset": null,
+          "castShadows": true,
+          "castShadowsLightmap": true,
+          "receiveShadows": true,
+          "lightmapped": false,
+          "lightmapSizeMultiplier": 1,
+          "castShadowsLightMap": true,
+          "lightMapped": false,
+          "lightMapSizeMultiplier": 1,
+          "isStatic": false,
+          "layers": [
+            0
+          ],
+          "batchGroupId": null
+        }
+      }
+    }
+  },
+  "id": 879576
+}

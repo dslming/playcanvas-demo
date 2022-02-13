@@ -1,0 +1,44 @@
+{
+  "name": "three_stage",
+  "version": "1.0.2",
+  "description": "three.js 基本场景搭建。",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.dev.js --progress",
+    "build": "webpack --config webpack.build.js --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dslming/three_stage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dslming/three_stage/issues"
+  },
+  "homepage": "https://github.com/dslming/three_stage#readme",
+  "dependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "dat.gui": "^0.7.7",
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-obfuscator": "^0.10.0",
+    "webpackbar": "^5.0.0-3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "compression-webpack-plugin": "^5.0.2",
+    "copy-webpack-plugin": "^5.0.1",
+    "dat.gui": "^0.7.7",
+    "glslify": "^7.1.1",
+    "gsap": "^3.8.0",
+    "markdown-it": "^12.2.0",
+    "markdown-it-katex": "^2.0.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vconsole": "^3.9.1"
+  }
+}
