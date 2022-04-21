@@ -2,6 +2,27 @@
 // import * as pc from '../engine/build/playcanvas.mjs'
 import * as pc from './src/index'
 
+function createSkybox(params) {
+  // Required to make skybox work in Newgrounds
+  // See: https://forum.playcanvas.com/t/avoid-loading-cubemap-as-dds-file/21214
+  // const app = app;
+  const textures = ['px', 'nx', 'py', 'ny', 'pz', 'nz'].map(name => app.assets.find(name + '.png'));
+  // this.textures = textures;
+  // window.skyboxScript = this;
+
+  const cubemapAsset = new pc.Asset('skybox_cubemap', 'cubemap', null, {
+    textures: textures.map(function(faceAsset) {
+      return faceAsset.id;
+    })
+  });
+  cubemapAsset.loadFaces = true;
+  cubemapAsset.on('load', function() {
+    this.initSkyboxFromTexture(cubemapAsset.resource);
+  }.bind(this));
+  app.assets.add(cubemapAsset);
+  app.assets.load(cubemapAsset);
+}
+
 // create a PlayCanvas application
 const canvas = document.createElement('canvas');
 document.body.appendChild(canvas);
@@ -43,4 +64,5 @@ light.addComponent('light');
 app.root.addChild(light);
 light.setEulerAngles(45, 0, 0);
 
+createSkybox();
 app.start();

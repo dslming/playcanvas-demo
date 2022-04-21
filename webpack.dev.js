@@ -2,10 +2,12 @@ const path = require('path')
 const WebpackBar = require('webpackbar')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+// distance, sky
+const demoName = "sky"
 module.exports = {
   mode: "development",
-  entry: "./app.js",
-  // entry: "./distance/index.js",
+  // entry: "./app.js",
+  entry: `./${demoName}/index.js`,
   output: {
     filename: "build.js",
     path: path.join(__dirname, "./dist")
@@ -16,7 +18,7 @@ module.exports = {
     port: 8888,
     open: false,
     compress: false,
-    contentBase: path.join(__dirname,"./distance")
+    contentBase: path.join(__dirname, `./${demoName}`)
   },
   plugins: [
     new WebpackBar(),
