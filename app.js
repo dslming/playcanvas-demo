@@ -3,24 +3,42 @@
 import * as pc from './src/index'
 
 function createSkybox(params) {
-  // Required to make skybox work in Newgrounds
-  // See: https://forum.playcanvas.com/t/avoid-loading-cubemap-as-dds-file/21214
-  // const app = app;
-  const textures = ['px', 'nx', 'py', 'ny', 'pz', 'nz'].map(name => app.assets.find(name + '.png'));
-  // this.textures = textures;
-  // window.skyboxScript = this;
+  // // Required to make skybox work in Newgrounds
+  // // See: https://forum.playcanvas.com/t/avoid-loading-cubemap-as-dds-file/21214
+  // // const app = app;
+  // const textures = ['px', 'nx', 'py', 'ny', 'pz', 'nz'].map(name => app.assets.find(name + '.png'));
 
-  const cubemapAsset = new pc.Asset('skybox_cubemap', 'cubemap', null, {
-    textures: textures.map(function(faceAsset) {
-      return faceAsset.id;
-    })
+  // const cubemapAsset = new pc.Asset('skybox_cubemap', 'cubemap', null, {
+  //   textures: textures.map(function(faceAsset) {
+  //     return faceAsset.id;
+  //   })
+  // });
+  // cubemapAsset.loadFaces = true;
+  // cubemapAsset.on('load', function() {
+  //   this.initSkyboxFromTexture(cubemapAsset.resource);
+  // }.bind(this));
+  // app.assets.add(cubemapAsset);
+  // app.assets.load(cubemapAsset);
+
+  let envAsset = new pc.Asset('papermill', 'texture', {
+    url: './texture/moonless_golf_1k.hdr'
   });
-  cubemapAsset.loadFaces = true;
-  cubemapAsset.on('load', function() {
-    this.initSkyboxFromTexture(cubemapAsset.resource);
-  }.bind(this));
-  app.assets.add(cubemapAsset);
-  app.assets.load(cubemapAsset);
+  envAsset.ready(() => {
+    const env = envAsset.resource;
+
+    // set the skybox
+    const skybox = pc.EnvLighting.generateSkyboxCubemap(env);
+    app.scene.skybox = skybox;
+    app.scene.skyboxMip = 2
+
+    // generate prefiltered lighting (reflections and ambient)
+    const lighting = pc.EnvLighting.generateLightingSource(env);
+    const envAtlas = pc.EnvLighting.generateAtlas(lighting);
+    app.scene.envAtlas = envAtlas;
+    lighting.destroy();
+  });
+  app.assets.add(envAsset);
+  app.assets.load(envAsset);
 }
 
 // create a PlayCanvas application
@@ -28,7 +46,7 @@ const canvas = document.createElement('canvas');
 document.body.appendChild(canvas);
 
 const app = new pc.Application(canvas);
-
+window.app = app;
 // fill the available space at full resolution
 app.setCanvasFillMode(pc.FILLMODE_FILL_WINDOW);
 app.setCanvasResolution(pc.RESOLUTION_AUTO);
