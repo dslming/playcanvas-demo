@@ -2,24 +2,7 @@
 // import * as pc from '../engine/build/playcanvas.mjs'
 import * as pc from './src/index'
 
-function createSkybox(params) {
-  // // Required to make skybox work in Newgrounds
-  // // See: https://forum.playcanvas.com/t/avoid-loading-cubemap-as-dds-file/21214
-  // // const app = app;
-  // const textures = ['px', 'nx', 'py', 'ny', 'pz', 'nz'].map(name => app.assets.find(name + '.png'));
-
-  // const cubemapAsset = new pc.Asset('skybox_cubemap', 'cubemap', null, {
-  //   textures: textures.map(function(faceAsset) {
-  //     return faceAsset.id;
-  //   })
-  // });
-  // cubemapAsset.loadFaces = true;
-  // cubemapAsset.on('load', function() {
-  //   this.initSkyboxFromTexture(cubemapAsset.resource);
-  // }.bind(this));
-  // app.assets.add(cubemapAsset);
-  // app.assets.load(cubemapAsset);
-
+function skyHDR() {
   // https://github.com/cx20/gltf-test/blob/e82fccd71a0040042a35ed0c591fdad3867d1857/examples/playcanvas/index.js
   let envAsset = new pc.Asset('papermill', 'texture', {
     url: './texture/moonless_golf_1k.hdr'
@@ -40,8 +23,57 @@ function createSkybox(params) {
   });
   app.assets.add(envAsset);
   app.assets.load(envAsset);
+}
 
+function sky6() {
   // https://github.com/playcanvas/model-viewer/blob/2ad25f4fd5990b635036e398e5c79fa4f01b92e8/src/viewer.ts#L506
+
+  const files = [
+    "texture/cube/TEXTURE_CUBE_MAP_POSITIVE_X.png",
+    "texture/cube/TEXTURE_CUBE_MAP_NEGATIVE_X.png",
+    "texture/cube/TEXTURE_CUBE_MAP_POSITIVE_Y.png",
+    "texture/cube/TEXTURE_CUBE_MAP_NEGATIVE_Y.png",
+    "texture/cube/TEXTURE_CUBE_MAP_POSITIVE_Z.png",
+    "texture/cube/TEXTURE_CUBE_MAP_NEGATIVE_Z.png",
+  ]
+  // construct an asset for each cubemap face
+  const faceAssets = files.map((file, index) => {
+    const faceAsset = new pc.Asset('skybox_face' + index, 'texture', {
+      url: file
+    });
+    app.assets.add(faceAsset);
+    app.assets.load(faceAsset);
+    return faceAsset;
+  });
+
+  // construct the cubemap asset
+  const cubemapAsset = new pc.Asset('skybox_cubemap', 'cubemap', null, {
+    textures: faceAssets.map(faceAsset => faceAsset.id)
+  });
+  cubemapAsset.loadFaces = true;
+
+
+  cubemapAsset.on('load', () => {
+    let env = cubemapAsset.resource
+    // this.initSkyboxFromTexture(cubemapAsset.resource);
+    // set the skybox
+    const skybox = pc.EnvLighting.generateSkyboxCubemap(env);
+    app.scene.skybox = skybox;
+    app.scene.skyboxMip = 1
+
+    // generate prefiltered lighting (reflections and ambient)
+    const lighting = pc.EnvLighting.generateLightingSource(env);
+    const envAtlas = pc.EnvLighting.generateAtlas(lighting);
+    app.scene.envAtlas = envAtlas;
+  });
+  app.assets.add(cubemapAsset);
+  app.assets.load(cubemapAsset);
+
+}
+
+function createSkybox(params) {
+  sky6()
+  // skyHDR()
 }
 
 // create a PlayCanvas application
@@ -69,7 +101,7 @@ box.addComponent('model', {
 });
 box.addComponent('script');
 box.script.create('rotate');
-app.root.addChild(box);
+// app.root.addChild(box);
 
 // create camera entity
 const camera = new pc.Entity('camera');
@@ -77,7 +109,7 @@ camera.addComponent('camera', {
   clearColor: new pc.Color(0.1, 0.1, 0.1)
 });
 app.root.addChild(camera);
-camera.setPosition(0, 0, 3);
+camera.setPosition(0, 0, 10);
 
 // create directional light entity
 const light = new pc.Entity('light');

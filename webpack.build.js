@@ -3,11 +3,11 @@ const WebpackBar = require('webpackbar')
 
 module.exports = {
   mode: "development",
-  entry: "./src/aaa.js",
+  entry: "./extras/index.js",
   // entry: "./aaa.js",
   output: {
-    filename: "build.js",
-    path: path.join(__dirname, "./")
+    filename: "playcanvas-extras.js",
+    path: path.join(__dirname, "./build/")
   },
   devtool: "source-map",
   module: "commonjs",
@@ -15,19 +15,18 @@ module.exports = {
     port: 8888,
     open: false,
     compress: false,
-    contentBase: path.join(__dirname,"./")
+    contentBase: path.join(__dirname, "./")
   },
   plugins: [
     new WebpackBar(),
   ],
   module: {
-    rules: [
-       {
-         test: /\.frag$/,
-         use: [{
-           // 本地引用loader
-           loader: path.resolve('./shader-chunks-loader'),
-         }]
+    rules: [{
+        test: /\.frag$/,
+        use: [{
+          // 本地引用loader
+          loader: path.resolve('./shader-chunks-loader'),
+        }]
       },
       {
         test: /\.vert$/,
