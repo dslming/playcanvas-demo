@@ -59,12 +59,12 @@ function sky6() {
     // set the skybox
     const skybox = pc.EnvLighting.generateSkyboxCubemap(env);
     app.scene.skybox = skybox;
-    app.scene.skyboxMip = 1
+    app.scene.skyboxMip = 2
 
     // generate prefiltered lighting (reflections and ambient)
-    const lighting = pc.EnvLighting.generateLightingSource(env);
-    const envAtlas = pc.EnvLighting.generateAtlas(lighting);
-    app.scene.envAtlas = envAtlas;
+    // const lighting = pc.EnvLighting.generateLightingSource(env);
+    // const envAtlas = pc.EnvLighting.generateAtlas(lighting);
+    // app.scene.envAtlas = envAtlas;
   });
   app.assets.add(cubemapAsset);
   app.assets.load(cubemapAsset);
