@@ -20,6 +20,7 @@ function createSkybox(params) {
   // app.assets.add(cubemapAsset);
   // app.assets.load(cubemapAsset);
 
+  // https://github.com/cx20/gltf-test/blob/e82fccd71a0040042a35ed0c591fdad3867d1857/examples/playcanvas/index.js
   let envAsset = new pc.Asset('papermill', 'texture', {
     url: './texture/moonless_golf_1k.hdr'
   });
@@ -39,6 +40,8 @@ function createSkybox(params) {
   });
   app.assets.add(envAsset);
   app.assets.load(envAsset);
+
+  // https://github.com/playcanvas/model-viewer/blob/2ad25f4fd5990b635036e398e5c79fa4f01b92e8/src/viewer.ts#L506
 }
 
 // create a PlayCanvas application
