@@ -19,11 +19,11 @@ precision highp float;
 precision highp sampler2DShadow;
 #endif
 
-#define PROCESS_FUNC reproject
+#define PROCESS_FUNC prefilterSamples
 #define DECODE_FUNC decodeGamma
 #define ENCODE_FUNC encodeRGBM
 #define SOURCE_FUNC sampleCubemap
-#define TARGET_FUNC getDirectionCubemap
+#define TARGET_FUNC getDirectionEquirect
 #define NUM_SAMPLES 1024
 #define SUPPORTS_TEXLOD
 
