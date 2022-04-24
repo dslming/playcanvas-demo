@@ -1,6 +1,26 @@
 // import * as pc from 'playcanvas';
 // import * as pc from '../engine/build/playcanvas.mjs'
 import * as pc from './src/index'
+import { cameraScript } from './camera/index'
+
+function initCamera() {
+  // Create a camera with an orbit camera script
+  var camera = new pc.Entity();
+  camera.addComponent("camera", {
+    clearColor: new pc.Color(0.4, 0.45, 0.5)
+  });
+
+  camera.addComponent("script");
+  camera.script.create("orbitCamera", {
+    attributes: {
+      inertiaFactor: 0.2 // Override default of 0 (no inertia)
+    }
+  });
+
+  camera.script.create("orbitCameraInputMouse");
+  camera.script.create("orbitCameraInputTouch");
+  app.root.addChild(camera);
+}
 
 function skyHDR() {
   // https://github.com/cx20/gltf-test/blob/e82fccd71a0040042a35ed0c591fdad3867d1857/examples/playcanvas/index.js
@@ -63,11 +83,13 @@ function sky6() {
 
     // generate prefiltered lighting (reflections and ambient)
     // const lighting = pc.EnvLighting.generateLightingSource(env);
+    app.start();
     const envAtlas = pc.EnvLighting.generateAtlas(env);
     app.scene.envAtlas = envAtlas;
   });
   app.assets.add(cubemapAsset);
   app.assets.load(cubemapAsset);
+
 
 }
 
@@ -80,7 +102,16 @@ function createSkybox(params) {
 const canvas = document.createElement('canvas');
 document.body.appendChild(canvas);
 
-const app = new pc.Application(canvas);
+var app = new pc.Application(canvas, {
+  mouse: new pc.Mouse(document.body),
+  touch: new pc.TouchDevice(document.body),
+  elementInput: new pc.ElementInput(canvas),
+  gamepads: new pc.GamePads(),
+  keyboard: new pc.Keyboard(window),
+  graphicsDeviceOptions: {
+    alpha: true
+  }
+});
 window.app = app;
 // fill the available space at full resolution
 app.setCanvasFillMode(pc.FILLMODE_FILL_WINDOW);
@@ -103,13 +134,15 @@ box.addComponent('script');
 box.script.create('rotate');
 // app.root.addChild(box);
 
+cameraScript(pc);
 // create camera entity
-const camera = new pc.Entity('camera');
-camera.addComponent('camera', {
-  clearColor: new pc.Color(0.1, 0.1, 0.1)
-});
-app.root.addChild(camera);
-camera.setPosition(0, 0, 10);
+// const camera = new pc.Entity('camera');
+// camera.addComponent('camera', {
+//   clearColor: new pc.Color(0.1, 0.1, 0.1)
+// });
+// app.root.addChild(camera);
+// camera.setPosition(0, 0, 10);
+initCamera();
 
 // create directional light entity
 const light = new pc.Entity('light');
@@ -118,4 +151,4 @@ app.root.addChild(light);
 light.setEulerAngles(45, 0, 0);
 
 createSkybox();
-app.start();
+// app.start();

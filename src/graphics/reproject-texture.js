@@ -554,8 +554,10 @@ function reprojectTexture(source, target, options = {}) {
         device.scope.resolve("samplesTexInverseSize").setValue([1.0 / samplesTex.width, 1.0 / samplesTex.height]);
     }
 
-    for (let f = 0; f < (target.cubemap ? 6 : 1); f++) {
+    for (let f = 0; f < (target.cubemap ? 1 : 1); f++) {
         if (face === null || f === face) {
+            console.error(456);
+
             const renderTarget = new RenderTarget({
                 colorBuffer: target,
                 face: f,

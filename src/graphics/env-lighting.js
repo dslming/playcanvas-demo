@@ -146,8 +146,10 @@ class EnvLighting {
 
         // generate mipmaps
         const rect = new Vec4(0, 0, 512, 256);
-        const levels = calcLevels(result.width, result.height);
-        for (let i = 0; i < levels; ++i) {
+        const levels = 1//calcLevels(result.width, result.height);
+      for (let i = 0; i < levels; ++i) {
+          console.error(123);
+
             reprojectTexture(source, result, {
                 numSamples: 1,
                 rect: rect,
@@ -160,38 +162,38 @@ class EnvLighting {
             rect.w = Math.max(1, Math.floor(rect.w * 0.5));
         }
 
-        DebugGraphics.popGpuMarker(device);
-        DebugGraphics.pushGpuMarker(device, "reflections");
+        // DebugGraphics.popGpuMarker(device);
+        // DebugGraphics.pushGpuMarker(device, "reflections");
 
-        // generate blurry reflections
-        rect.set(0, 256, 256, 128);
-        for (let i = 1; i < 7; ++i) {
-            reprojectTexture(source, result, {
-                numSamples: options?.numSamples || 1024,
-                distribution: options?.distribution || 'ggx',
-                specularPower: Math.max(1, 2048 >> (i * 2)),
-                rect: rect,
-                seamPixels: 1
-            });
-            rect.y += rect.w;
-            rect.z = Math.max(1, Math.floor(rect.z * 0.5));
-            rect.w = Math.max(1, Math.floor(rect.w * 0.5));
-        }
+        // // generate blurry reflections
+        // rect.set(0, 256, 256, 128);
+        // for (let i = 1; i < 7; ++i) {
+        //     reprojectTexture(source, result, {
+        //         numSamples: options?.numSamples || 1024,
+        //         distribution: options?.distribution || 'ggx',
+        //         specularPower: Math.max(1, 2048 >> (i * 2)),
+        //         rect: rect,
+        //         seamPixels: 1
+        //     });
+        //     rect.y += rect.w;
+        //     rect.z = Math.max(1, Math.floor(rect.z * 0.5));
+        //     rect.w = Math.max(1, Math.floor(rect.w * 0.5));
+        // }
 
-        DebugGraphics.popGpuMarker(device);
-        DebugGraphics.pushGpuMarker(device, "ambient");
+        // DebugGraphics.popGpuMarker(device);
+        // DebugGraphics.pushGpuMarker(device, "ambient");
 
-        // generate ambient
-        rect.set(128, 256 + 128, 64, 32);
-        reprojectTexture(source, result, {
-            numSamples: options?.numSamples || 2048,
-            distribution: 'lambert',
-            rect: rect,
-            seamPixels: 1
-        });
+        // // generate ambient
+        // rect.set(128, 256 + 128, 64, 32);
+        // reprojectTexture(source, result, {
+        //     numSamples: options?.numSamples || 2048,
+        //     distribution: 'lambert',
+        //     rect: rect,
+        //     seamPixels: 1
+        // });
 
-        DebugGraphics.popGpuMarker(device);
-        DebugGraphics.popGpuMarker(device);
+        // DebugGraphics.popGpuMarker(device);
+        // DebugGraphics.popGpuMarker(device);
 
         return result;
     }
