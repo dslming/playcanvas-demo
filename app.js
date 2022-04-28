@@ -82,9 +82,11 @@ function sky6() {
 
     // generate prefiltered lighting (reflections and ambient)
     // const lighting = pc.EnvLighting.generateLightingSource(env);
-    const envAtlas = pc.EnvLighting.generateAtlas(env);
-    app.scene.envAtlas = envAtlas;
-    app.start();
+    // setInterval(() => {
+      const envAtlas = pc.EnvLighting.generateAtlas(env);
+      app.scene.envAtlas = envAtlas;
+      app.start();
+    // }, 100);///
   });
   app.assets.add(cubemapAsset);
   app.assets.load(cubemapAsset);
@@ -133,15 +135,15 @@ box.addComponent('script');
 box.script.create('rotate');
 // app.root.addChild(box);
 
-cameraScript(pc);
+// cameraScript(pc);
 // create camera entity
-// const camera = new pc.Entity('camera');
-// camera.addComponent('camera', {
-//   clearColor: new pc.Color(0.1, 0.1, 0.1)
-// });
-// app.root.addChild(camera);
-// camera.setPosition(0, 0, 10);
-initCamera();
+const camera = new pc.Entity('camera');
+camera.addComponent('camera', {
+  clearColor: new pc.Color(0.1, 0.1, 0.1)
+});
+app.root.addChild(camera);
+camera.setPosition(0, 0, 10);
+//  initCamera();
 
 // create directional light entity
 const light = new pc.Entity('light');
