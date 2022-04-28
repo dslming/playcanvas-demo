@@ -49,12 +49,12 @@ function sky6() {
   // https://github.com/playcanvas/model-viewer/blob/2ad25f4fd5990b635036e398e5c79fa4f01b92e8/src/viewer.ts#L506
 
   const files = [
-    "texture/cube/TEXTURE_CUBE_MAP_POSITIVE_X.png",
-    "texture/cube/TEXTURE_CUBE_MAP_NEGATIVE_X.png",
-    "texture/cube/TEXTURE_CUBE_MAP_POSITIVE_Y.png",
-    "texture/cube/TEXTURE_CUBE_MAP_NEGATIVE_Y.png",
-    "texture/cube/TEXTURE_CUBE_MAP_POSITIVE_Z.png",
-    "texture/cube/TEXTURE_CUBE_MAP_NEGATIVE_Z.png",
+    "texture/pisa/px.png",
+    "texture/pisa/nx.png",
+    "texture/pisa/py.png",
+    "texture/pisa/ny.png",
+    "texture/pisa/pz.png",
+    "texture/pisa/nz.png",
   ]
   // construct an asset for each cubemap face
   const faceAssets = files.map((file, index) => {
@@ -76,16 +76,15 @@ function sky6() {
   cubemapAsset.on('load', () => {
     let env = cubemapAsset.resource
     // this.initSkyboxFromTexture(cubemapAsset.resource);
-    // set the skybox
     // const skybox = pc.EnvLighting.generateSkyboxCubemap(env);
     // app.scene.skybox = skybox;
     // app.scene.skyboxMip = 0
 
     // generate prefiltered lighting (reflections and ambient)
     // const lighting = pc.EnvLighting.generateLightingSource(env);
-    app.start();
     const envAtlas = pc.EnvLighting.generateAtlas(env);
     app.scene.envAtlas = envAtlas;
+    app.start();
   });
   app.assets.add(cubemapAsset);
   app.assets.load(cubemapAsset);
