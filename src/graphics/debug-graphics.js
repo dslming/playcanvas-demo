@@ -14,7 +14,7 @@ class DebugGraphics {
      * @param {string} name - The name of the marker.
      */
     static pushGpuMarker(device, name) {
-        device.pushMarker(name);
+        // device.pushMarker(name);
     }
 
     /**
@@ -23,7 +23,7 @@ class DebugGraphics {
      * @param {GraphicsDevice} device - The graphics device.
      */
     static popGpuMarker(device) {
-        device.popMarker();
+        // device.popMarker();
     }
 }
 

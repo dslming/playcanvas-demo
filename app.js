@@ -78,7 +78,7 @@ function sky6() {
     // this.initSkyboxFromTexture(cubemapAsset.resource);
     // const skybox = pc.EnvLighting.generateSkyboxCubemap(env);
     // app.scene.skybox = skybox;
-    app.scene.skyboxMip = 1
+    app.scene.skyboxMip = 0
 
     // generate prefiltered lighting (reflections and ambient)
     // const lighting = pc.EnvLighting.generateLightingSource(env);
@@ -94,33 +94,29 @@ function sky6() {
 
 }
 
-function skyDDs(params) {
-    let envAsset = new pc.Asset('papermill', 'texture', {
-      url: './static/assets/cubemaps/helipad.dds'
+function skyDDs() {
+    let cubemapAsset = new pc.Asset('helipad', 'cubemap', {
+      url: './static/assets/cubemaps/helipad.dds',
+    }, {
+      type: pc.TEXTURETYPE_RGBM
     });
-    envAsset.ready(() => {
-      const env = envAsset.resource;
 
-      // set the skybox
-      const skybox = pc.EnvLighting.generateSkyboxCubemap(env);
-      app.scene.skybox = skybox;
-      app.scene.skyboxMip = 2
-
-      // generate prefiltered lighting (reflections and ambient)
-      const lighting = pc.EnvLighting.generateLightingSource(env);
-      const envAtlas = pc.EnvLighting.generateAtlas(lighting);
-      app.scene.envAtlas = envAtlas;
-      lighting.destroy();
-    });
-    app.assets.add(envAsset);
-  app.assets.load(envAsset);
+  cubemapAsset.on('load', (assets) => {
+    app.scene.skyboxMip = 0
+    app.scene.setSkybox(assets._resources);
+    app.scene.skyboxMip = 1;
+    app.scene.skyboxIntensity = 0.7;
     app.start();
+  })
+
+  app.assets.add(cubemapAsset);
+  app.assets.load(cubemapAsset);
 }
 
 function createSkybox(params) {
-  sky6()
+  // sky6()
   // skyHDR()
-  // skyDDs()
+  skyDDs()
 }
 
 // create a PlayCanvas application
@@ -167,7 +163,7 @@ cameraScript(pc);
 // });
 // app.root.addChild(camera);
 // camera.setPosition(0, 0, 10);
-// initCamera();
+initCamera();
 
 // create directional light entity
 const light = new pc.Entity('light');

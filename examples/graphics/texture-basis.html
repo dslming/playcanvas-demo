@@ -63,7 +63,7 @@
     function example(app, canvas, assets) {
 
       // Create the application and start the update loop
-      
+
 
       pc.basisInitialize({
         glueUrl: '/../../static/lib/basis/basis.wasm.js',
@@ -78,8 +78,8 @@
       app.setCanvasResolution(pc.RESOLUTION_AUTO);
 
       // Set skybox
-      app.scene.toneMapping = pc.TONEMAP_ACES;
-      app.scene.skyboxMip = 1;
+    //   app.scene.toneMapping = pc.TONEMAP_ACES;
+      app.scene.skyboxMip = 0;
       app.scene.skyboxIntensity = 0.7;
       app.scene.setSkybox(assets.helipad.resources);
 
@@ -130,7 +130,7 @@
 
       // Add the new Entities to the hierarchy
       app.root.addChild(light);
-      app.root.addChild(shape);
+    //   app.root.addChild(shape);
       app.root.addChild(camera);
 
       // Set an update function on the app's update event
@@ -315,7 +315,7 @@
         }
     </script>
     <script>
-        // create the example observer 
+        // create the example observer
         var data = new observer.Observer({});
         window.top.observerData = data;
 
