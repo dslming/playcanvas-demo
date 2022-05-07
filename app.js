@@ -78,14 +78,14 @@ function sky6() {
     // this.initSkyboxFromTexture(cubemapAsset.resource);
     // const skybox = pc.EnvLighting.generateSkyboxCubemap(env);
     // app.scene.skybox = skybox;
-    // app.scene.skyboxMip = 0
+    app.scene.skyboxMip = 1
 
     // generate prefiltered lighting (reflections and ambient)
     // const lighting = pc.EnvLighting.generateLightingSource(env);
     // setInterval(() => {
-      const envAtlas = pc.EnvLighting.generateAtlas(env);
-      app.scene.envAtlas = envAtlas;
-      app.start();
+    const envAtlas = pc.EnvLighting.generateAtlas(env);
+    app.scene.envAtlas = envAtlas;
+    app.start();
     // }, 100);///
   });
   app.assets.add(cubemapAsset);
@@ -94,9 +94,33 @@ function sky6() {
 
 }
 
+function skyDDs(params) {
+    let envAsset = new pc.Asset('papermill', 'texture', {
+      url: './static/assets/cubemaps/helipad.dds'
+    });
+    envAsset.ready(() => {
+      const env = envAsset.resource;
+
+      // set the skybox
+      const skybox = pc.EnvLighting.generateSkyboxCubemap(env);
+      app.scene.skybox = skybox;
+      app.scene.skyboxMip = 2
+
+      // generate prefiltered lighting (reflections and ambient)
+      const lighting = pc.EnvLighting.generateLightingSource(env);
+      const envAtlas = pc.EnvLighting.generateAtlas(lighting);
+      app.scene.envAtlas = envAtlas;
+      lighting.destroy();
+    });
+    app.assets.add(envAsset);
+  app.assets.load(envAsset);
+    app.start();
+}
+
 function createSkybox(params) {
   sky6()
   // skyHDR()
+  // skyDDs()
 }
 
 // create a PlayCanvas application
@@ -135,15 +159,15 @@ box.addComponent('script');
 box.script.create('rotate');
 // app.root.addChild(box);
 
-// cameraScript(pc);
+cameraScript(pc);
 // create camera entity
-const camera = new pc.Entity('camera');
-camera.addComponent('camera', {
-  clearColor: new pc.Color(0.1, 0.1, 0.1)
-});
-app.root.addChild(camera);
-camera.setPosition(0, 0, 10);
-//  initCamera();
+// const camera = new pc.Entity('camera');
+// camera.addComponent('camera', {
+//   clearColor: new pc.Color(0.1, 0.1, 0.1)
+// });
+// app.root.addChild(camera);
+// camera.setPosition(0, 0, 10);
+// initCamera();
 
 // create directional light entity
 const light = new pc.Entity('light');
