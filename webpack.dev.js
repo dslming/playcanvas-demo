@@ -2,12 +2,12 @@ const path = require('path')
 const WebpackBar = require('webpackbar')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-// distance, sky
-const demoName = "sky"
+// distance, sky, ring
+const demoName = "ring"
 module.exports = {
   mode: "development",
-  entry: "./app.js",
-  // entry: `./${demoName}/index.js`,
+  // entry: "./app.js",
+  entry: `./${demoName}/index.js`,
   output: {
     filename: "build.js",
     path: path.join(__dirname, "./dist")
@@ -18,8 +18,8 @@ module.exports = {
     port: 8888,
     open: false,
     compress: false,
-    // contentBase: path.join(__dirname, `./${demoName}`)
-    contentBase: path.join(__dirname, `./`)
+    contentBase: path.join(__dirname, `./${demoName}`)
+    // contentBase: path.join(__dirname, `./`)
   },
   plugins: [
     new WebpackBar(),
