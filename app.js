@@ -33,7 +33,7 @@ function skyHDR() {
     // set the skybox
     const skybox = pc.EnvLighting.generateSkyboxCubemap(env);
     app.scene.skybox = skybox;
-    app.scene.skyboxMip = 2
+    app.scene.skyboxMip = 1;
 
     // generate prefiltered lighting (reflections and ambient)
     const lighting = pc.EnvLighting.generateLightingSource(env);
@@ -43,6 +43,7 @@ function skyHDR() {
   });
   app.assets.add(envAsset);
   app.assets.load(envAsset);
+  app.start();
 }
 
 function sky6() {
@@ -115,8 +116,8 @@ function skyDDs() {
 
 function createSkybox(params) {
   // sky6()
-  // skyHDR()
-  skyDDs()
+  skyHDR()
+  // skyDDs()
 }
 
 // create a PlayCanvas application

@@ -1,9 +1,12 @@
 const path = require('path')
 const WebpackBar = require('webpackbar')
 
+// distance, sky, ring
+const demoName = "ring"
 module.exports = {
   mode: "development",
-  entry: "./extras/index.js",
+  // entry: "./src/index.js",
+  entry: `./${demoName}/index.js`,
   // entry: "./aaa.js",
   output: {
     filename: "playcanvas-extras.js",

@@ -1,0 +1,3527 @@
+{
+  "application_properties": {
+    "antiAlias": true,
+    "fillMode": "FILL_WINDOW",
+    "resolutionMode": "AUTO",
+    "height": 720,
+    "width": 1280,
+    "use3dPhysics": false,
+    "preferWebGl2": true,
+    "preserveDrawingBuffer": false,
+    "scripts": [
+      42169472,
+      42169473,
+      42170303,
+      42175706,
+      42175707,
+      42180482,
+      42182372,
+      42182444
+    ],
+    "transparentCanvas": false,
+    "useDevicePixelRatio": true,
+    "useLegacyScripts": false,
+    "vr": false,
+    "loadingScreenScript": null,
+    "useLegacyAudio": false,
+    "batchGroups": [],
+    "layers": {
+      "0": {
+        "name": "World",
+        "opaqueSortMode": 2,
+        "transparentSortMode": 3
+      },
+      "1": {
+        "name": "Depth",
+        "opaqueSortMode": 2,
+        "transparentSortMode": 3
+      },
+      "2": {
+        "name": "Skybox",
+        "opaqueSortMode": 0,
+        "transparentSortMode": 3
+      },
+      "3": {
+        "name": "Immediate",
+        "opaqueSortMode": 0,
+        "transparentSortMode": 3
+      },
+      "4": {
+        "name": "UI",
+        "opaqueSortMode": 1,
+        "transparentSortMode": 1
+      }
+    },
+    "layerOrder": [
+      {
+        "layer": 0,
+        "transparent": false,
+        "enabled": true
+      },
+      {
+        "layer": 1,
+        "transparent": false,
+        "enabled": true
+      },
+      {
+        "layer": 2,
+        "transparent": false,
+        "enabled": true
+      },
+      {
+        "layer": 0,
+        "transparent": true,
+        "enabled": true
+      },
+      {
+        "layer": 3,
+        "transparent": false,
+        "enabled": true
+      },
+      {
+        "layer": 3,
+        "transparent": true,
+        "enabled": true
+      },
+      {
+        "layer": 4,
+        "transparent": true,
+        "enabled": true
+      }
+    ],
+    "useKeyboard": true,
+    "useMouse": true,
+    "useTouch": true,
+    "useGamepads": false,
+    "i18nAssets": [],
+    "externalScripts": [],
+    "useLegacyAmmoPhysics": true,
+    "powerPreference": "default",
+    "maxAssetRetries": 0,
+    "libraries": []
+  },
+  "scenes": [
+    {
+      "name": "Star-Lord",
+      "url": "345858.json"
+    }
+  ],
+  "assets": {
+    "1288061": {
+      "data": {
+        "alphaTest": 0,
+        "ambient": [
+          0.7882353067398071,
+          0.7882353067398071,
+          0.7882353067398071
+        ],
+        "ambientTint": false,
+        "aoMap": 5715137,
+        "aoMapChannel": "r",
+        "aoMapOffset": [
+          0,
+          0
+        ],
+        "aoMapTiling": [
+          1,
+          1
+        ],
+        "aoMapUv": 1,
+        "aoMapVertexColor": false,
+        "blendType": 3,
+        "bumpMapFactor": 1,
+        "conserveEnergy": true,
+        "cubeMap": 0,
+        "cubeMapProjection": 0,
+        "cubeMapProjectionBox": {
+          "center": [
+            0,
+            0,
+            0
+          ],
+          "halfExtents": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "cull": 0,
+        "depthTest": true,
+        "depthWrite": true,
+        "diffuse": [
+          0.7411764860153198,
+          0.7411764860153198,
+          0.7411764860153198
+        ],
+        "diffuseMap": 42182892,
+        "diffuseMapChannel": "rgb",
+        "diffuseMapOffset": [
+          0,
+          0
+        ],
+        "diffuseMapTiling": [
+          1,
+          1
+        ],
+        "diffuseMapTint": true,
+        "diffuseMapUv": 0,
+        "diffuseMapVertexColor": false,
+        "emissive": [
+          1,
+          1,
+          1
+        ],
+        "emissiveIntensity": 1,
+        "emissiveMap": 42182888,
+        "emissiveMapChannel": "rgb",
+        "emissiveMapOffset": [
+          0,
+          0
+        ],
+        "emissiveMapTiling": [
+          1,
+          1
+        ],
+        "emissiveMapTint": true,
+        "emissiveMapUv": 0,
+        "emissiveMapVertexColor": false,
+        "fresnelFactor": 0,
+        "fresnelModel": 0,
+        "glossMap": 42182889,
+        "glossMapChannel": "r",
+        "glossMapOffset": [
+          0,
+          0
+        ],
+        "glossMapTiling": [
+          1,
+          1
+        ],
+        "glossMapUv": 0,
+        "glossMapVertexColor": false,
+        "heightMap": 0,
+        "heightMapChannel": "r",
+        "heightMapFactor": 1,
+        "heightMapOffset": [
+          0,
+          0
+        ],
+        "heightMapTiling": [
+          1,
+          1
+        ],
+        "heightMapUv": 0,
+        "lightMap": 0,
+        "lightMapChannel": "rgb",
+        "lightMapOffset": [
+          0,
+          0
+        ],
+        "lightMapTiling": [
+          1,
+          1
+        ],
+        "lightMapUv": 1,
+        "lightMapVertexColor": false,
+        "metalness": 1,
+        "metalnessMap": 0,
+        "metalnessMapChannel": "r",
+        "metalnessMapOffset": [
+          0,
+          0
+        ],
+        "metalnessMapTiling": [
+          1,
+          1
+        ],
+        "metalnessMapTint": false,
+        "metalnessMapUv": 0,
+        "metalnessMapVertexColor": false,
+        "normalMap": 42183264,
+        "normalMapOffset": [
+          0,
+          0
+        ],
+        "normalMapTiling": [
+          1,
+          1
+        ],
+        "normalMapUv": 0,
+        "occludeSpecular": 2,
+        "opacity": 1,
+        "opacityMap": 0,
+        "opacityMapChannel": "r",
+        "opacityMapOffset": [
+          0,
+          0
+        ],
+        "opacityMapTiling": [
+          1,
+          1
+        ],
+        "opacityMapUv": 0,
+        "opacityMapVertexColor": false,
+        "reflectivity": 0.3,
+        "refraction": 0,
+        "refractionIndex": 0.6666666666666666,
+        "shader": "blinn",
+        "shadowSampleType": 1,
+        "shininess": 90,
+        "specular": [
+          0.501960813999176,
+          0.501960813999176,
+          0.501960813999176
+        ],
+        "specularAntialias": true,
+        "specularMap": 42182890,
+        "specularMapChannel": "rgb",
+        "specularMapOffset": [
+          0,
+          0
+        ],
+        "specularMapTiling": [
+          1,
+          1
+        ],
+        "specularMapTint": true,
+        "specularMapUv": 0,
+        "specularMapVertexColor": false,
+        "sphereMap": 0,
+        "useMetalness": false,
+        "useFog": true,
+        "useLighting": true,
+        "useSkybox": true,
+        "useGammaTonemap": true,
+        "alphaToCoverage": false,
+        "opacityFadesSpecular": true,
+        "alphaFade": 1,
+        "clearCoat": 0,
+        "clearCoatMap": null,
+        "clearCoatMapChannel": "r",
+        "clearCoatMapUv": 0,
+        "clearCoatMapTiling": [
+          1,
+          1
+        ],
+        "clearCoatMapOffset": [
+          0,
+          0
+        ],
+        "clearCoatVertexColor": false,
+        "clearCoatVertexColorChannel": "r",
+        "clearCoatGlossiness": 1,
+        "clearCoatGlossMap": null,
+        "clearCoatGlossMapChannel": "r",
+        "clearCoatGlossMapUv": 0,
+        "clearCoatGlossMapTiling": [
+          1,
+          1
+        ],
+        "clearCoatGlossMapOffset": [
+          0,
+          0
+        ],
+        "clearCoatGlossVertexColor": false,
+        "clearCoatGlossVertexColorChannel": "r",
+        "clearCoatBumpiness": 1,
+        "clearCoatNormalMap": null,
+        "clearCoatNormalMapUv": 0,
+        "clearCoatNormalMapTiling": [
+          1,
+          1
+        ],
+        "clearCoatNormalMapOffset": [
+          0,
+          0
+        ]
+      },
+      "file": null,
+      "name": "material",
+      "preload": true,
+      "revision": 1,
+      "tags": [],
+      "type": "material",
+      "i18n": {},
+      "id": "1288061"
+    },
+    "5715137": {
+      "tags": [],
+      "name": "starlord_ao2_occlusion3.png",
+      "revision": 1,
+      "preload": true,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 2,
+          "etc1": false,
+          "etc2": false,
+          "normals": false,
+          "basis": true,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Grayscale",
+        "width": 2048,
+        "height": 2048,
+        "alpha": false,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "starlord_ao2_occlusion3.png",
+        "size": 1747193,
+        "hash": "4c2da40e3bbe9ad521dfb23ab6afd057",
+        "variants": {
+          "basis": {
+            "filename": "starlord_ao2_occlusion3.basis",
+            "hash": "a15ce29b2ae9711f67a311130fbc5915",
+            "size": 401522,
+            "sizeGzip": 401524,
+            "opt": 0,
+            "quality": 128,
+            "compressionMode": "etc",
+            "url": "files/assets/5715137/starlord_ao2_occlusion3.basis"
+          }
+        },
+        "url": "files/assets/5715137/starlord_ao2_occlusion3.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "5715137"
+    },
+    "42139664": {
+      "tags": [],
+      "name": "star-lord.glb",
+      "revision": 1,
+      "preload": true,
+      "region": "eu-west-1",
+      "meta": {
+        "meshes": 1,
+        "meshInstances": 1,
+        "meshInstancesNames": [
+          "polySurface27_2_4_5"
+        ],
+        "nodes": 2,
+        "skins": 0,
+        "vertices": 6310,
+        "triangles": 6332,
+        "attributes": {
+          "NORMAL": 1,
+          "POSITION": 1,
+          "TEXCOORD_0": 1,
+          "TEXCOORD_1": 1
+        },
+        "userMapping": {
+          "0": true
+        }
+      },
+      "data": {
+        "mapping": [
+          {
+            "material": 1288061
+          }
+        ],
+        "area": 0
+      },
+      "type": "model",
+      "file": {
+        "hash": "5832c83d82fc9cecdf114922986449fb",
+        "size": 292320,
+        "filename": "star-lord.glb",
+        "url": "files/assets/42139664/star-lord.glb"
+      },
+      "i18n": {},
+      "id": "42139664"
+    },
+    "42140004": {
+      "tags": [],
+      "name": "Tyler Bates - To The Stars.mp3",
+      "revision": 1,
+      "preload": false,
+      "meta": null,
+      "data": null,
+      "type": "audio",
+      "file": {
+        "filename": "Tyler Bates - To The Stars.mp3",
+        "size": 4129332,
+        "hash": "ee5b340346a825c6cc6b81094de0632b",
+        "url": "files/assets/42140004/Tyler%20Bates%20-%20To%20The%20Stars.mp3"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42140004"
+    },
+    "42140077": {
+      "tags": [],
+      "name": "ui.css",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": null,
+      "type": "css",
+      "file": {
+        "filename": "ui.css",
+        "size": 2056,
+        "hash": "269a3f1cf2a9b781c3ff2c7ada3775b3",
+        "url": "files/assets/42140077/ui.css"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42140077"
+    },
+    "42155147": {
+      "tags": [],
+      "name": "guardians.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 230,
+        "height": 83,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "guardians.png",
+        "size": 40924,
+        "hash": "367bc926af14f0537a3c2553706859ce",
+        "variants": {},
+        "url": "files/assets/42155147/guardians.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42155147"
+    },
+    "42155228": {
+      "tags": [],
+      "name": "joachim.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 278,
+        "height": 60,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "joachim.png",
+        "size": 26853,
+        "hash": "cb5acceeb502cd9def5a4d62939dff5c",
+        "variants": {},
+        "url": "files/assets/42155228/joachim.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42155228"
+    },
+    "42155234": {
+      "tags": [],
+      "name": "audio.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 48,
+        "height": 48,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "audio.png",
+        "size": 2460,
+        "hash": "f44f0fbf87c18e1004ce68005854026c",
+        "variants": {},
+        "url": "files/assets/42155234/audio.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42155234"
+    },
+    "42155277": {
+      "tags": [],
+      "name": "rnl.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 128,
+        "height": 128,
+        "alpha": false,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "rnl.png",
+        "size": 16800,
+        "hash": "d87bde12d886b5e466ddf4c1c5983767",
+        "variants": {},
+        "url": "files/assets/42155277/rnl.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42155277"
+    },
+    "42155278": {
+      "tags": [],
+      "name": "grace.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 128,
+        "height": 128,
+        "alpha": false,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "grace.png",
+        "size": 17252,
+        "hash": "d960fec801856859374035acda585dbd",
+        "variants": {},
+        "url": "files/assets/42155278/grace.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42155278"
+    },
+    "42155280": {
+      "tags": [],
+      "name": "uffizi.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 128,
+        "height": 128,
+        "alpha": false,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "uffizi.png",
+        "size": 14289,
+        "hash": "ede0116a4e472ede66a052d473a75fe7",
+        "variants": {},
+        "url": "files/assets/42155280/uffizi.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42155280"
+    },
+    "42155281": {
+      "tags": [],
+      "name": "galileo.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 128,
+        "height": 128,
+        "alpha": false,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "galileo.png",
+        "size": 16188,
+        "hash": "289ef36a83cc261d78ae1f46d9f458a5",
+        "variants": {},
+        "url": "files/assets/42155281/galileo.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42155281"
+    },
+    "42169472": {
+      "tags": [],
+      "name": "ui.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "order": 100,
+        "scripts": {
+          "ui": {
+            "attributesOrder": [
+              "css",
+              "skyboxes",
+              "buttonAudio",
+              "buttonGuardians",
+              "buttonJoachim"
+            ],
+            "attributes": {
+              "css": {
+                "type": "asset",
+                "assetType": "css"
+              },
+              "buttonGuardians": {
+                "type": "asset",
+                "assetType": "texture"
+              },
+              "buttonJoachim": {
+                "type": "asset",
+                "assetType": "texture"
+              },
+              "buttonAudio": {
+                "type": "asset",
+                "assetType": "texture"
+              },
+              "skyboxes": {
+                "type": "asset",
+                "assetType": "texture",
+                "array": true
+              }
+            }
+          }
+        },
+        "loadingType": 0,
+        "loading": false
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 19491,
+        "hash": "c3326f94ba5e8a8a705b4a63dd20392c",
+        "url": "__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42169472"
+    },
+    "42169473": {
+      "tags": [],
+      "name": "eyes.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "order": 100,
+        "scripts": {
+          "eyes": {
+            "attributesOrder": [],
+            "attributes": {}
+          }
+        },
+        "loadingType": 0,
+        "loading": false
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 19491,
+        "hash": "c3326f94ba5e8a8a705b4a63dd20392c",
+        "url": "__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42169473"
+    },
+    "42169884": {
+      "tags": [],
+      "name": "grace-negz.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "grace-negz.png",
+        "hash": "0092fb83a1ec770cd715fae31f3142a6",
+        "size": 123238,
+        "variants": {},
+        "url": "files/assets/42169884/grace-negz.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42169884"
+    },
+    "42169885": {
+      "tags": [],
+      "name": "grace-posy.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "grace-posy.png",
+        "hash": "f17680fc5745f8a82d9bf8d8e5b054c5",
+        "size": 133890,
+        "variants": {},
+        "url": "files/assets/42169885/grace-posy.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42169885"
+    },
+    "42169886": {
+      "tags": [],
+      "name": "grace-negy.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "grace-negy.png",
+        "hash": "33a213fd2e6b77b5bd96af0684f12346",
+        "size": 127742,
+        "variants": {},
+        "url": "files/assets/42169886/grace-negy.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42169886"
+    },
+    "42169887": {
+      "tags": [],
+      "name": "grace-negx.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "grace-negx.png",
+        "hash": "f93bbc3f57863dd61485e2cc42ac65c5",
+        "size": 122223,
+        "variants": {},
+        "url": "files/assets/42169887/grace-negx.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42169887"
+    },
+    "42169888": {
+      "tags": [],
+      "name": "grace-posx.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "grace-posx.png",
+        "hash": "b3dc35064b2c8c47e0b61ef3cc7a8f57",
+        "size": 132034,
+        "variants": {},
+        "url": "files/assets/42169888/grace-posx.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42169888"
+    },
+    "42169889": {
+      "tags": [],
+      "name": "grace-posz.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": true,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "grace-posz.png",
+        "hash": "6c00f5f824ec2208ff7261e5e0b163b4",
+        "size": 131840,
+        "variants": {},
+        "url": "files/assets/42169889/grace-posz.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42169889"
+    },
+    "42169900": {
+      "tags": [],
+      "name": "grace",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "name": "New Cubemap",
+        "textures": [
+          42169888,
+          42169887,
+          42169885,
+          42169886,
+          42169889,
+          42169884
+        ],
+        "minFilter": 5,
+        "magFilter": 1,
+        "anisotropy": 1,
+        "rgbm": true
+      },
+      "type": "cubemap",
+      "file": {
+        "filename": "grace.dds",
+        "size": 524456,
+        "hash": "3a36be13556af003f22c98569bd551a3",
+        "url": "files/assets/42169900/grace.dds"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42169900"
+    },
+    "42170303": {
+      "tags": [],
+      "name": "skybox.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "scripts": {
+          "skybox": {
+            "attributesOrder": [
+              "skyboxes"
+            ],
+            "attributes": {
+              "skyboxes": {
+                "type": "json",
+                "schema": [
+                  {
+                    "name": "cubemap",
+                    "title": "Cubemap",
+                    "description": "The skybox cubemap.",
+                    "type": "asset",
+                    "assetType": "cubemap"
+                  },
+                  {
+                    "name": "exposure",
+                    "title": "Exposure",
+                    "description": "The exposure for the cubemap.",
+                    "type": "number",
+                    "min": 0,
+                    "max": 25,
+                    "default": 1
+                  }
+                ],
+                "array": true
+              }
+            }
+          }
+        },
+        "loading": false,
+        "loadingType": 0
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 19491,
+        "hash": "c3326f94ba5e8a8a705b4a63dd20392c",
+        "url": "__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42170303"
+    },
+    "42175140": {
+      "tags": [],
+      "name": "lens.jpg",
+      "revision": 1,
+      "preload": true,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "jpeg",
+        "type": "Bilevel",
+        "width": 1024,
+        "height": 576,
+        "alpha": false,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": false
+      },
+      "type": "texture",
+      "file": {
+        "filename": "lens.jpg",
+        "size": 139174,
+        "hash": "4600d1b874f5152e33d68d38231ddf27",
+        "variants": {},
+        "url": "files/assets/42175140/lens.jpg"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42175140"
+    },
+    "42175591": {
+      "tags": [],
+      "name": "basilica",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "name": "New Cubemap",
+        "textures": [
+          42202812,
+          42202814,
+          42202810,
+          42202813,
+          42202815,
+          42202811
+        ],
+        "minFilter": 5,
+        "magFilter": 1,
+        "anisotropy": 1,
+        "rgbm": true
+      },
+      "type": "cubemap",
+      "file": {
+        "filename": "basilica.dds",
+        "size": 524456,
+        "hash": "fe78300d8f20fbf5f047197fc992f343",
+        "url": "files/assets/42175591/basilica.dds"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42175591"
+    },
+    "42175706": {
+      "tags": [],
+      "name": "posteffect-brightnesscontrast.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "order": 100,
+        "scripts": {
+          "brightnessContrast": {
+            "attributesOrder": [
+              "brightness",
+              "contrast"
+            ],
+            "attributes": {
+              "brightness": {
+                "type": "number",
+                "default": 0,
+                "min": -1,
+                "max": 1,
+                "title": "Brightness"
+              },
+              "contrast": {
+                "type": "number",
+                "default": 0,
+                "min": -1,
+                "max": 1,
+                "title": "Contrast"
+              }
+            }
+          }
+        },
+        "loadingType": 0,
+        "loading": false
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 19491,
+        "hash": "c3326f94ba5e8a8a705b4a63dd20392c",
+        "url": "__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42175706"
+    },
+    "42175707": {
+      "tags": [],
+      "name": "posteffect-fxaa.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "order": 100,
+        "scripts": {
+          "fxaa": {
+            "attributesOrder": [],
+            "attributes": {}
+          }
+        },
+        "loadingType": 0,
+        "loading": false
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 19491,
+        "hash": "c3326f94ba5e8a8a705b4a63dd20392c",
+        "url": "__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42175707"
+    },
+    "42180482": {
+      "tags": [],
+      "name": "orbit.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "order": 100,
+        "scripts": {
+          "orbit": {
+            "attributesOrder": [
+              "sensitivity",
+              "easing"
+            ],
+            "attributes": {
+              "sensitivity": {
+                "type": "number",
+                "default": 0.5
+              },
+              "easing": {
+                "type": "number",
+                "default": 0.2
+              }
+            }
+          }
+        },
+        "loadingType": 0,
+        "loading": false
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 19491,
+        "hash": "c3326f94ba5e8a8a705b4a63dd20392c",
+        "url": "__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42180482"
+    },
+    "42181097": {
+      "tags": [],
+      "name": "basis.js",
+      "revision": 1,
+      "preload": false,
+      "meta": null,
+      "data": {
+        "order": 100,
+        "scripts": {},
+        "loadingType": 0
+      },
+      "type": "script",
+      "file": {
+        "filename": "basis.js",
+        "size": 914868,
+        "hash": "f4e7187753896f78ac0163d12d0ca994",
+        "url": "files/assets/42181097/basis.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42181097"
+    },
+    "42181098": {
+      "tags": [],
+      "name": "basis.wasm.js",
+      "revision": 1,
+      "preload": false,
+      "meta": null,
+      "data": {
+        "order": 100,
+        "scripts": {},
+        "loadingType": 0
+      },
+      "type": "script",
+      "file": {
+        "filename": "basis.wasm.js",
+        "size": 59581,
+        "hash": "5924647deceadf5ef7a98f8fc4aa7668",
+        "url": "files/assets/42181098/basis.wasm.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42181098"
+    },
+    "42181099": {
+      "tags": [],
+      "name": "basis.wasm.wasm",
+      "revision": 1,
+      "preload": false,
+      "meta": null,
+      "data": {
+        "moduleName": "BASIS",
+        "glueScriptId": 42181098,
+        "fallbackScriptId": 42181097,
+        "loadingType": 0
+      },
+      "type": "wasm",
+      "file": {
+        "filename": "basis.wasm.wasm",
+        "size": 571652,
+        "hash": "ab5f235bd8fb59af77b426c3f6da4539",
+        "url": "files/assets/42181099/basis.wasm.wasm"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42181099"
+    },
+    "42182221": {
+      "tags": [],
+      "name": "uffizi-negx.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 512,
+        "height": 512,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "uffizi-negx.png",
+        "hash": "18a4ebcb6fa35f6265cbb5fd2c0098ef",
+        "size": 495109,
+        "variants": {},
+        "url": "files/assets/42182221/uffizi-negx.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182221"
+    },
+    "42182222": {
+      "tags": [],
+      "name": "uffizi-posy.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 512,
+        "height": 512,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "uffizi-posy.png",
+        "hash": "0d249fbe144146a716fe4245c9868a27",
+        "size": 401492,
+        "variants": {},
+        "url": "files/assets/42182222/uffizi-posy.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182222"
+    },
+    "42182223": {
+      "tags": [],
+      "name": "uffizi-posz.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 512,
+        "height": 512,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "uffizi-posz.png",
+        "hash": "765c7cce5c923ae3aab625ee7f9f64fe",
+        "size": 452687,
+        "variants": {},
+        "url": "files/assets/42182223/uffizi-posz.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182223"
+    },
+    "42182224": {
+      "tags": [],
+      "name": "uffizi-negy.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 512,
+        "height": 512,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "uffizi-negy.png",
+        "hash": "33e52a473f19bd5f7a4cc8ca3e3f65cc",
+        "size": 387275,
+        "variants": {},
+        "url": "files/assets/42182224/uffizi-negy.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182224"
+    },
+    "42182225": {
+      "tags": [],
+      "name": "uffizi-negz.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 512,
+        "height": 512,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "uffizi-negz.png",
+        "hash": "d2eb6021aceadd3cffa075432937dcec",
+        "size": 487508,
+        "variants": {},
+        "url": "files/assets/42182225/uffizi-negz.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182225"
+    },
+    "42182226": {
+      "tags": [],
+      "name": "uffizi-posx.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 512,
+        "height": 512,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "uffizi-posx.png",
+        "hash": "d9c2fe9c5a4ebd1d448ef64b6ab74534",
+        "size": 483776,
+        "variants": {},
+        "url": "files/assets/42182226/uffizi-posx.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182226"
+    },
+    "42182227": {
+      "tags": [],
+      "name": "uffizi",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "name": "New Cubemap",
+        "textures": [
+          42182226,
+          42182221,
+          42182222,
+          42182224,
+          42182223,
+          42182225
+        ],
+        "minFilter": 5,
+        "magFilter": 1,
+        "anisotropy": 1,
+        "rgbm": true
+      },
+      "type": "cubemap",
+      "file": {
+        "filename": "uffizi.dds",
+        "size": 524456,
+        "hash": "12ad527d230aadde4b9bc2d6d15488da",
+        "url": "files/assets/42182227/uffizi.dds"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182227"
+    },
+    "42182334": {
+      "tags": [],
+      "name": "rnl-negz.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "rnl-negz.png",
+        "hash": "74c083ff31c63f418b410a9b6125bc76",
+        "size": 135808,
+        "variants": {},
+        "url": "files/assets/42182334/rnl-negz.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182334"
+    },
+    "42182335": {
+      "tags": [],
+      "name": "rnl-posx.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "rnl-posx.png",
+        "hash": "6ee570a8bad8876578c67e7e34f01216",
+        "size": 129926,
+        "variants": {},
+        "url": "files/assets/42182335/rnl-posx.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182335"
+    },
+    "42182336": {
+      "tags": [],
+      "name": "rnl-posz.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "rnl-posz.png",
+        "hash": "255c61b2f615dab6e3345410511898c9",
+        "size": 129705,
+        "variants": {},
+        "url": "files/assets/42182336/rnl-posz.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182336"
+    },
+    "42182337": {
+      "tags": [],
+      "name": "rnl-negx.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "rnl-negx.png",
+        "hash": "a0510b7b5502c4f40ee2aff62b9e58a1",
+        "size": 132438,
+        "variants": {},
+        "url": "files/assets/42182337/rnl-negx.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182337"
+    },
+    "42182338": {
+      "tags": [],
+      "name": "rnl-negy.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "rnl-negy.png",
+        "hash": "6b9e7f8e5c64805da202a063546303f7",
+        "size": 137031,
+        "variants": {},
+        "url": "files/assets/42182338/rnl-negy.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182338"
+    },
+    "42182339": {
+      "tags": [],
+      "name": "rnl-posy.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "rnl-posy.png",
+        "hash": "55f765ae00839e9d450691d5790dc205",
+        "size": 130521,
+        "variants": {},
+        "url": "files/assets/42182339/rnl-posy.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182339"
+    },
+    "42182340": {
+      "tags": [],
+      "name": "rnl",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "name": "New Cubemap",
+        "textures": [
+          42182335,
+          42182337,
+          42182339,
+          42182338,
+          42182336,
+          42182334
+        ],
+        "minFilter": 5,
+        "magFilter": 1,
+        "anisotropy": 1,
+        "rgbm": true
+      },
+      "type": "cubemap",
+      "file": {
+        "filename": "rnl.dds",
+        "size": 524456,
+        "hash": "07f04b76608e64409af5d9971bcb23c1",
+        "url": "files/assets/42182340/rnl.dds"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182340"
+    },
+    "42182353": {
+      "tags": [],
+      "name": "galileo-negx.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "galileo-negx.png",
+        "hash": "6740e3c9e5b471dd53a05b6b58c677de",
+        "size": 120604,
+        "variants": {},
+        "url": "files/assets/42182353/galileo-negx.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182353"
+    },
+    "42182354": {
+      "tags": [],
+      "name": "galileo-posx.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "galileo-posx.png",
+        "hash": "539bd0de8b480297ee0c1a4a9b3e73fb",
+        "size": 124783,
+        "variants": {},
+        "url": "files/assets/42182354/galileo-posx.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182354"
+    },
+    "42182355": {
+      "tags": [],
+      "name": "galileo-posz.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "galileo-posz.png",
+        "hash": "2ed985e2dbd6dd234c4dd8f0cfaba5fa",
+        "size": 135185,
+        "variants": {},
+        "url": "files/assets/42182355/galileo-posz.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182355"
+    },
+    "42182356": {
+      "tags": [],
+      "name": "galileo-negz.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "galileo-negz.png",
+        "hash": "657a530118b5bc8b61d503c3e64b5603",
+        "size": 126967,
+        "variants": {},
+        "url": "files/assets/42182356/galileo-negz.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182356"
+    },
+    "42182357": {
+      "tags": [],
+      "name": "galileo-negy.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "galileo-negy.png",
+        "hash": "318729c400e8f39be3fa334a8cc168e1",
+        "size": 126470,
+        "variants": {},
+        "url": "files/assets/42182357/galileo-negy.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182357"
+    },
+    "42182358": {
+      "tags": [],
+      "name": "galileo-posy.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "galileo-posy.png",
+        "hash": "5e289dabc86d1ff05f991d4d3e32db0e",
+        "size": 131278,
+        "variants": {},
+        "url": "files/assets/42182358/galileo-posy.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182358"
+    },
+    "42182359": {
+      "tags": [],
+      "name": "galileo",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "name": "New Cubemap",
+        "textures": [
+          42182354,
+          42182353,
+          42182358,
+          42182357,
+          42182355,
+          42182356
+        ],
+        "minFilter": 5,
+        "magFilter": 1,
+        "anisotropy": 1,
+        "rgbm": true
+      },
+      "type": "cubemap",
+      "file": {
+        "filename": "galileo.dds",
+        "size": 524456,
+        "hash": "5195902bc50a0639a786df5c8139c09d",
+        "url": "files/assets/42182359/galileo.dds"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182359"
+    },
+    "42182372": {
+      "tags": [],
+      "name": "posteffect-vignette_abberation.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "order": 100,
+        "scripts": {
+          "vignetteAberration": {
+            "attributesOrder": [
+              "offset",
+              "darkness",
+              "aberration"
+            ],
+            "attributes": {
+              "offset": {
+                "type": "number",
+                "default": 1,
+                "min": 0,
+                "title": "Offset"
+              },
+              "darkness": {
+                "type": "number",
+                "default": 1,
+                "title": "Darkness"
+              },
+              "aberration": {
+                "type": "number",
+                "default": 0.5,
+                "title": "Aberration"
+              }
+            }
+          }
+        },
+        "loadingType": 0,
+        "loading": false
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 19491,
+        "hash": "c3326f94ba5e8a8a705b4a63dd20392c",
+        "url": "__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182372"
+    },
+    "42182444": {
+      "tags": [],
+      "name": "posteffect-bloom-masked.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "order": 100,
+        "scripts": {
+          "bloomMasked": {
+            "attributesOrder": [
+              "bloomIntensity",
+              "bloomThreshold",
+              "blurAmount",
+              "maskTexture",
+              "maskMix"
+            ],
+            "attributes": {
+              "bloomIntensity": {
+                "type": "number",
+                "default": 1,
+                "min": 0,
+                "title": "Intensity"
+              },
+              "bloomThreshold": {
+                "type": "number",
+                "default": 0.25,
+                "min": 0,
+                "max": 1,
+                "title": "Threshold"
+              },
+              "blurAmount": {
+                "type": "number",
+                "default": 4,
+                "min": 1,
+                "title": "Blur amount"
+              },
+              "maskTexture": {
+                "type": "asset",
+                "assetType": "texture",
+                "title": "Mask Texture"
+              },
+              "maskMix": {
+                "type": "number",
+                "default": 0.5,
+                "title": "Mask Mix"
+              }
+            }
+          }
+        },
+        "loadingType": 0,
+        "loading": false
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 19491,
+        "hash": "c3326f94ba5e8a8a705b4a63dd20392c",
+        "url": "__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182444"
+    },
+    "42182888": {
+      "tags": [],
+      "name": "tex_emissive_2048.png",
+      "revision": 1,
+      "preload": true,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": true,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 2048,
+        "height": 2048,
+        "alpha": false,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "tex_emissive_2048.png",
+        "size": 41725,
+        "hash": "c7b8beca3edf6ba982ca23cbcc1baebb",
+        "variants": {
+          "basis": {
+            "filename": "tex_emissive_2048.basis",
+            "hash": "c53558e859dbc04812432ec2034477e3",
+            "size": 9896,
+            "sizeGzip": 9058,
+            "opt": 0,
+            "quality": 128,
+            "compressionMode": "etc",
+            "url": "files/assets/42182888/tex_emissive_2048.basis"
+          }
+        },
+        "url": "files/assets/42182888/tex_emissive_2048.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182888"
+    },
+    "42182889": {
+      "tags": [],
+      "name": "tex_glossiness_2048.png",
+      "revision": 1,
+      "preload": true,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": true,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 2048,
+        "height": 2048,
+        "alpha": false,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "tex_glossiness_2048.png",
+        "size": 5511737,
+        "hash": "d37089e89be79664f17e98051b0de0e5",
+        "variants": {
+          "basis": {
+            "filename": "tex_glossiness_2048.basis",
+            "hash": "72d22d4d763d5963c869dc0bcef83304",
+            "size": 534466,
+            "sizeGzip": 534583,
+            "opt": 0,
+            "quality": 128,
+            "compressionMode": "etc",
+            "url": "files/assets/42182889/tex_glossiness_2048.basis"
+          }
+        },
+        "url": "files/assets/42182889/tex_glossiness_2048.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182889"
+    },
+    "42182890": {
+      "tags": [],
+      "name": "tex_specular_2048.png",
+      "revision": 1,
+      "preload": true,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": true,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 2048,
+        "height": 2048,
+        "alpha": false,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "tex_specular_2048.png",
+        "size": 5853205,
+        "hash": "948b6103dbd48026314c7dec04c7e5c8",
+        "variants": {
+          "basis": {
+            "filename": "tex_specular_2048.basis",
+            "hash": "b363346d8a55240e50202a1e021072cc",
+            "size": 527793,
+            "sizeGzip": 527905,
+            "opt": 0,
+            "quality": 128,
+            "compressionMode": "etc",
+            "url": "files/assets/42182890/tex_specular_2048.basis"
+          }
+        },
+        "url": "files/assets/42182890/tex_specular_2048.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182890"
+    },
+    "42182892": {
+      "tags": [],
+      "name": "diffuse_2048.png",
+      "revision": 1,
+      "preload": true,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": true,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 2048,
+        "height": 2048,
+        "alpha": false,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "diffuse_2048.png",
+        "size": 5152986,
+        "hash": "93dbfcd172ff416ce48d32448ffe1e9c",
+        "variants": {
+          "basis": {
+            "filename": "diffuse_2048.basis",
+            "hash": "d27ce80e0642845d0d9d19978854bdc3",
+            "size": 479909,
+            "sizeGzip": 480017,
+            "opt": 0,
+            "quality": 128,
+            "compressionMode": "etc",
+            "url": "files/assets/42182892/diffuse_2048.basis"
+          }
+        },
+        "url": "files/assets/42182892/diffuse_2048.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42182892"
+    },
+    "42183264": {
+      "tags": [],
+      "name": "tex_normal_2048.png",
+      "revision": 1,
+      "preload": true,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": true,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": true,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 2048,
+        "height": 2048,
+        "alpha": false,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "tex_normal_2048.png",
+        "size": 1531130,
+        "hash": "c43e3abde029ddb2bf74c09f02bfa032",
+        "variants": {
+          "basis": {
+            "filename": "tex_normal_2048.basis",
+            "hash": "03ef403c7e4445f2b21a66ea16ed8130",
+            "size": 429070,
+            "sizeGzip": 428400,
+            "opt": 8,
+            "quality": 128,
+            "compressionMode": "etc",
+            "url": "files/assets/42183264/tex_normal_2048.basis"
+          }
+        },
+        "url": "files/assets/42183264/tex_normal_2048.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42183264"
+    },
+    "42202810": {
+      "tags": [],
+      "name": "basilica-posy.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "basilica-posy.png",
+        "hash": "6ad3c6d15a8a0a645ec8f1e0ab97f234",
+        "size": 133413,
+        "variants": {},
+        "url": "files/assets/42202810/basilica-posy.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42202810"
+    },
+    "42202811": {
+      "tags": [],
+      "name": "basilica-negz.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "basilica-negz.png",
+        "hash": "cc0bcf935c6bf5e1a8fc8523463f1bff",
+        "size": 122848,
+        "variants": {},
+        "url": "files/assets/42202811/basilica-negz.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42202811"
+    },
+    "42202812": {
+      "tags": [],
+      "name": "basilica-posx.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "basilica-posx.png",
+        "hash": "9592bbf048660fc20d92ee444a234be0",
+        "size": 119895,
+        "variants": {},
+        "url": "files/assets/42202812/basilica-posx.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42202812"
+    },
+    "42202813": {
+      "tags": [],
+      "name": "basilica-negy.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": true,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "basilica-negy.png",
+        "hash": "2103c620b56455009bdb14992996c32e",
+        "size": 102277,
+        "variants": {},
+        "url": "files/assets/42202813/basilica-negy.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42202813"
+    },
+    "42202814": {
+      "tags": [],
+      "name": "basilica-negx.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "basilica-negx.png",
+        "hash": "0d78ebb603bf6580732d91510ec80eff",
+        "size": 120593,
+        "variants": {},
+        "url": "files/assets/42202814/basilica-negx.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42202814"
+    },
+    "42202815": {
+      "tags": [],
+      "name": "basilica-posz.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 256,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": true,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "basilica-posz.png",
+        "hash": "d15d2952c222234c0ced44bc50218d8c",
+        "size": 123815,
+        "variants": {},
+        "url": "files/assets/42202815/basilica-posz.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42202815"
+    },
+    "42202886": {
+      "tags": [],
+      "name": "basilica.png",
+      "revision": 1,
+      "preload": false,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Bilevel",
+        "width": 128,
+        "height": 128,
+        "alpha": false,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "basilica.png",
+        "size": 10568,
+        "hash": "af43a9b493acfc508b10b265e2ebdb04",
+        "variants": {},
+        "url": "files/assets/42202886/basilica.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "42202886"
+    },
+    "42435068": {
+      "tags": [],
+      "name": "bust",
+      "revision": 1,
+      "preload": true,
+      "region": "eu-west-1",
+      "meta": {
+        "index": 0
+      },
+      "data": {
+        "shader": "blinn",
+        "ambient": [
+          0.5019607843137255,
+          0.5019607843137255,
+          0.5019607843137255
+        ],
+        "diffuse": [
+          0.19607843137254902,
+          0.23529411764705882,
+          0.27450980392156865
+        ],
+        "specular": [
+          0.10196078431372549,
+          0.10196078431372549,
+          0.10196078431372549
+        ],
+        "shininess": 0,
+        "emissive": [
+          0,
+          0,
+          0
+        ],
+        "opacity": 1,
+        "aoMap": null,
+        "diffuseMap": null,
+        "specularMap": null,
+        "metalnessMap": null,
+        "glossMap": null,
+        "emissiveMap": null,
+        "normalMap": null,
+        "heightMap": null,
+        "opacityMap": null,
+        "sphereMap": null,
+        "cubeMap": null,
+        "lightMap": null,
+        "ambientTint": true,
+        "aoMapVertexColor": false,
+        "aoMapChannel": "r",
+        "aoMapUv": 0,
+        "aoMapTiling": [
+          1,
+          1
+        ],
+        "aoMapOffset": [
+          0,
+          0
+        ],
+        "occludeSpecular": 1,
+        "diffuseMapVertexColor": false,
+        "diffuseMapChannel": "rgb",
+        "diffuseMapUv": 0,
+        "diffuseMapTiling": [
+          1,
+          1
+        ],
+        "diffuseMapOffset": [
+          0,
+          0
+        ],
+        "diffuseMapTint": false,
+        "specularMapVertexColor": false,
+        "specularMapChannel": "rgb",
+        "specularMapUv": 0,
+        "specularMapTiling": [
+          1,
+          1
+        ],
+        "specularMapOffset": [
+          0,
+          0
+        ],
+        "specularMapTint": false,
+        "specularAntialias": true,
+        "useMetalness": false,
+        "metalnessMapVertexColor": false,
+        "metalnessMapChannel": "r",
+        "metalnessMapUv": 0,
+        "metalnessMapTiling": [
+          1,
+          1
+        ],
+        "metalnessMapOffset": [
+          0,
+          0
+        ],
+        "metalnessMapTint": false,
+        "metalness": 1,
+        "conserveEnergy": true,
+        "glossMapVertexColor": false,
+        "glossMapChannel": "r",
+        "glossMapUv": 0,
+        "glossMapTiling": [
+          1,
+          1
+        ],
+        "glossMapOffset": [
+          0,
+          0
+        ],
+        "fresnelModel": 0,
+        "fresnelFactor": 0,
+        "emissiveMapVertexColor": false,
+        "emissiveMapChannel": "rgb",
+        "emissiveMapUv": 0,
+        "emissiveMapTiling": [
+          1,
+          1
+        ],
+        "emissiveMapOffset": [
+          0,
+          0
+        ],
+        "emissiveMapTint": false,
+        "emissiveIntensity": 1,
+        "normalMapTiling": [
+          1,
+          1
+        ],
+        "normalMapOffset": [
+          0,
+          0
+        ],
+        "normalMapUv": 0,
+        "bumpMapFactor": 1,
+        "heightMapChannel": "r",
+        "heightMapUv": 0,
+        "heightMapTiling": [
+          1,
+          1
+        ],
+        "heightMapOffset": [
+          0,
+          0
+        ],
+        "heightMapFactor": 1,
+        "alphaTest": 0,
+        "opacityMapVertexColor": false,
+        "opacityMapChannel": "r",
+        "opacityMapUv": 0,
+        "opacityMapTiling": [
+          1,
+          1
+        ],
+        "opacityMapOffset": [
+          0,
+          0
+        ],
+        "reflectivity": 1,
+        "refraction": 0,
+        "refractionIndex": 0.6666666666666666,
+        "cubeMapProjection": 0,
+        "cubeMapProjectionBox": {
+          "center": [
+            0,
+            0,
+            0
+          ],
+          "halfExtents": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "lightMapVertexColor": false,
+        "lightMapChannel": "rgb",
+        "lightMapUv": 1,
+        "lightMapTiling": [
+          1,
+          1
+        ],
+        "lightMapOffset": [
+          0,
+          0
+        ],
+        "depthTest": true,
+        "depthWrite": true,
+        "cull": 1,
+        "blendType": 3,
+        "shadowSampleType": 1,
+        "useFog": true,
+        "useLighting": true,
+        "useSkybox": true,
+        "useGammaTonemap": true,
+        "alphaToCoverage": false,
+        "opacityFadesSpecular": true,
+        "alphaFade": 1,
+        "clearCoat": 0,
+        "clearCoatMap": null,
+        "clearCoatMapChannel": "r",
+        "clearCoatMapUv": 0,
+        "clearCoatMapTiling": [
+          1,
+          1
+        ],
+        "clearCoatMapOffset": [
+          0,
+          0
+        ],
+        "clearCoatVertexColor": false,
+        "clearCoatVertexColorChannel": "r",
+        "clearCoatGlossiness": 1,
+        "clearCoatGlossMap": null,
+        "clearCoatGlossMapChannel": "r",
+        "clearCoatGlossMapUv": 0,
+        "clearCoatGlossMapTiling": [
+          1,
+          1
+        ],
+        "clearCoatGlossMapOffset": [
+          0,
+          0
+        ],
+        "clearCoatGlossVertexColor": false,
+        "clearCoatGlossVertexColorChannel": "r",
+        "clearCoatBumpiness": 1,
+        "clearCoatNormalMap": null,
+        "clearCoatNormalMapUv": 0,
+        "clearCoatNormalMapTiling": [
+          1,
+          1
+        ],
+        "clearCoatNormalMapOffset": [
+          0,
+          0
+        ]
+      },
+      "type": "material",
+      "file": null,
+      "i18n": {},
+      "id": "42435068"
+    },
+    "42435156": {
+      "tags": [],
+      "name": "smooth_bust.glb",
+      "revision": 1,
+      "preload": true,
+      "region": "eu-west-1",
+      "meta": {
+        "meshes": 1,
+        "meshInstances": 1,
+        "meshInstancesNames": [
+          "DemoHead_1:Group48944"
+        ],
+        "nodes": 2,
+        "skins": 0,
+        "vertices": 10643,
+        "triangles": 20922,
+        "attributes": {
+          "NORMAL": 1,
+          "POSITION": 1
+        },
+        "userMapping": {
+          "0": true
+        }
+      },
+      "data": {
+        "mapping": [
+          {
+            "material": 42435068
+          }
+        ],
+        "area": 0
+      },
+      "type": "model",
+      "file": {
+        "hash": "16a8773523298bd2f4d78f1798cc38d8",
+        "size": 382700,
+        "filename": "smooth_bust.glb",
+        "url": "files/assets/42435156/smooth_bust.glb"
+      },
+      "i18n": {},
+      "id": "42435156"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+body {
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   outline-style:none;
+}
+a {
+    color: #fff;
+}
+.ui-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 240px;
+}
+.ui-button {
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 12px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    transform: scale(1, 1);
+    border-radius: 64px;
+    cursor: pointer;
+    transition: box-shadow 200ms, transform 200ms;
+    outline: 0 !important;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); !important
+    -webkit-tap-highlight-color: transparent; !important
+}
+.ui-button:hover {
+    box-shadow: 0px 0px 12px rgba(0,0,0,.6);
+    transform: scale(1.05, 1.05);
+}
+.ui-button.active {
+    box-shadow: 0px 0px 16px rgba(0,0,0,1);
+    transform: scale(1.1, 1.1);
+}
+*:focus {
+    outline: 0 !important;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); !important
+    -webkit-tap-highlight-color: transparent; !important
+}
+.author {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+}
+.author > img, .website > img {
+    display: block;
+}
+.website {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
+.music {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: opacity 200ms;
+}
+.music.off {
+    opacity: 0.3;
+}
+@media screen and (max-width: 640px), screen and (max-height: 480px) {
+    .ui-buttons {
+        margin: 6px;
+        width: 120px;
+    }
+    .ui-button {
+        width: 48px;
+        height: 48px;
+        margin: 6px;
+        border-radius: 24px;
+    }
+    .ui-element.author {
+        left: 0;
+        bottom: 0;
+    }
+    .ui-element.author > img {
+        width: 128px;
+    }
+    .ui-element.website {
+        right: 0;
+        bottom: 0;
+    }
+    .ui-element.website > img {
+        width: 128px;
+    }
+}

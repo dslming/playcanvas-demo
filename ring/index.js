@@ -116,6 +116,7 @@ pc.script.legacy = false;
       scriptPrefix: window.SCRIPT_PREFIX || "",
       scriptsOrder: window.SCRIPTS || []
     });
+    window.app = app;
   } catch (e) {
     if (e instanceof pc.UnsupportedBrowserError) {
       displayError('This page requires a browser that supports WebGL.<br/>' +
@@ -152,6 +153,7 @@ pc.script.legacy = false;
         }
 
         app.start();
+        window.app = app;
       });
     });
   });
