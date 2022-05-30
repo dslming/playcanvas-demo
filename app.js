@@ -31,19 +31,21 @@ function skyHDR() {
     const env = envAsset.resource;
 
     // set the skybox
-    const skybox = pc.EnvLighting.generateSkyboxCubemap(env);
-    app.scene.skybox = skybox;
+    // const skybox = pc.EnvLighting.generateSkyboxCubemap(env);
+    // app.scene.skybox = skybox;
     app.scene.skyboxMip = 1;
 
     // generate prefiltered lighting (reflections and ambient)
     const lighting = pc.EnvLighting.generateLightingSource(env);
-    const envAtlas = pc.EnvLighting.generateAtlas(lighting);
-    app.scene.envAtlas = envAtlas;
-    lighting.destroy();
+    setInterval(() => {
+      const envAtlas = pc.EnvLighting.generateAtlas(lighting);
+      app.scene.envAtlas = envAtlas;
+    }, 10);
+    // lighting.destroy();
   });
   app.assets.add(envAsset);
   app.assets.load(envAsset);
-  app.start();
+  // app.start();
 }
 
 function sky6() {
@@ -96,11 +98,11 @@ function sky6() {
 }
 
 function skyDDs() {
-    let cubemapAsset = new pc.Asset('helipad', 'cubemap', {
-      url: './static/assets/cubemaps/helipad.dds',
-    }, {
-      type: pc.TEXTURETYPE_RGBM
-    });
+  let cubemapAsset = new pc.Asset('helipad', 'cubemap', {
+    url: './static/assets/cubemaps/helipad.dds',
+  }, {
+    type: pc.TEXTURETYPE_RGBM
+  });
 
   cubemapAsset.on('load', (assets) => {
     app.scene.skyboxMip = 0

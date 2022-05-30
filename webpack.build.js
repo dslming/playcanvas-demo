@@ -1,16 +1,22 @@
 const path = require('path')
 const WebpackBar = require('webpackbar')
 
-// distance, sky, ring
-const demoName = "ring"
+// distance, sky, ring,
+// const demoName = "ring"
+const demoName = "extras"
 module.exports = {
   mode: "development",
-  // entry: "./src/index.js",
-  entry: `./${demoName}/index.js`,
+  // entry: "./src/core/indexed-list.js",
+  // entry: "./src/core/indexed-list.js",
+  entry: "./global.js",
+  // entry: `./extras/index.js`,
+  // entry: `./case/${demoName}/index.js`,
   // entry: "./aaa.js",
   output: {
-    filename: "playcanvas-extras.js",
-    path: path.join(__dirname, "./build/")
+    filename: "playcanvas-max.js",
+    // filename: "playcanvas-extras.js",
+    // path: path.join(__dirname, `./case/${demoName}//`)
+    path: path.join(__dirname, `./build/`)
   },
   devtool: "source-map",
   module: "commonjs",
